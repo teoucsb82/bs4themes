@@ -1,0 +1,186 @@
+section#navs
+  h2.section-title Navs
+  article#navs-tabs
+    h3 Tabs
+    p
+      ul.nav.nav-tabs role="tablist" 
+        li.nav-item
+          a.nav-link.active data-toggle="tab" href="#archer" role="tab" Archer
+        li.nav-item
+          a.nav-link data-toggle="tab" href="#lana" role="tab" Lana
+        li.nav-item
+          a.nav-link data-toggle="tab" href="#cyril" role="tab" Cryil
+        li.nav-item.dropdown
+          a.nav-link.dropdown-toggle aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" href="#" role="button"  Dropdown
+          .dropdown-menu
+            a.dropdown-item href="#"  Action
+            a.dropdown-item href="#"  Another action
+            a.dropdown-item href="#"  Something else here
+            .dropdown-divider
+            a.dropdown-item href="#"  Separated link
+        li.nav-item
+          a.nav-link.disabled disabled="disabled" Disabled
+    p
+      .tab-content
+        #archer.tab-pane.fade.in.active role="tabpanel" 
+          | I bet I wont even be able to eat spaghetti and meatballs ever again. Oh god, I could eat. Not necessarily spaghetti and meatballs, but not necessarily not spaghetti and meatballs. I mean I really like spaghetti and meatballs. Man, if I don't get some spaghetti and meatballs I might literally die.
+        #lana.tab-pane.fade role="tabpanel" Danger zone!
+        #cyril.tab-pane.fade role="tabpanel" 
+          | It's not you, it's your weak womany hands. It's like being choked by a child, which I thought would be hot but... 
+  article#navs-pills
+    h3 Pills
+    p.lead 
+      | Default
+      ul.nav.nav-pills
+        li.nav-item
+          a.nav-link.active href="#"  Active
+        li.nav-item
+          a.nav-link href="#"  Link
+        li.nav-item
+          a.nav-link href="#"  Another link
+        li.nav-item.dropdown
+          a.nav-link.dropdown-toggle aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" href="#" role="button"  Dropdown
+          .dropdown-menu
+            a.dropdown-item href="#"  Action
+            a.dropdown-item href="#"  Another action
+            a.dropdown-item href="#"  Something else here
+            .dropdown-divider
+            a.dropdown-item href="#"  Separated link
+        li.nav-item
+          a.nav-link.disabled disabled="disabled" Disabled
+    p.lead
+      | Stacked
+      ul.nav.nav-pills.nav-stacked
+        li.nav-item
+          a.nav-link.active href="#"  Active
+        li.nav-item
+          a.nav-link href="#"  Link
+        li.nav-item
+          a.nav-link href="#"  Another link
+        li.nav-item.dropdown
+          a.nav-link.dropdown-toggle aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" href="#" role="button"  Dropdown
+          .dropdown-menu
+            a.dropdown-item href="#"  Action
+            a.dropdown-item href="#"  Another action
+            a.dropdown-item href="#"  Something else here
+            .dropdown-divider
+            a.dropdown-item href="#"  Separated link
+        li.nav-item
+          a.nav-link.disabled disabled="disabled" Disabled
+  article#navs-breadcrumbs
+    h3 Breadcrumbs
+    p
+      ol.breadcrumb
+        li.active Home
+      ol.breadcrumb
+        li
+          a href="#"  Home
+        li.active Library
+      ol.breadcrumb style=("margin-bottom: 5px;") 
+        li
+          a href="#"  Home
+        li
+          a href="#"  Library
+        li.active Data
+
+  .row
+    .col-sm-6
+      article#navs-pagination
+        h3 Pagination
+        p
+          nav
+            ul.pagination.pagination-lg
+              li.page-item
+                a.page-link aria-label="Previous" href="#" 
+                  span aria-hidden="true"  &laquo;
+                  span.sr-only Previous
+              li.page-item
+                a.page-link href="#"  1
+              li.page-item
+                a.page-link href="#"  2
+              li.page-item
+                a.page-link href="#"  3
+              li.page-item
+                a.page-link href="#"  4
+              li.page-item
+                a.page-link href="#"  5
+              li.page-item
+                a.page-link aria-label="Next" href="#" 
+                  span aria-hidden="true"  &raquo;
+                  span.sr-only Next
+          nav
+            ul.pagination
+              li.page-item
+                a.page-link aria-label="Previous" href="#" 
+                  span aria-hidden="true"  &laquo;
+                  span.sr-only Previous
+              li.page-item
+                a.page-link href="#"  1
+              li.page-item
+                a.page-link href="#"  2
+              li.page-item
+                a.page-link href="#"  3
+              li.page-item
+                a.page-link href="#"  4
+              li.page-item
+                a.page-link href="#"  5
+              li.page-item
+                a.page-link aria-label="Next" href="#" 
+                  span aria-hidden="true"  &raquo;
+                  span.sr-only Next
+          nav
+            ul.pagination
+              li.page-item
+                a.page-link aria-label="Previous" href="#" 
+                  span aria-hidden="true"  &laquo;
+                  span.sr-only Previous
+              li.page-item.active
+                a.page-link href="#"  1
+              li.page-item
+                a.page-link href="#"  2
+              li.page-item
+                a.page-link href="#"  3
+              li.page-item
+                a.page-link href="#"  4
+              li.page-item.disabled
+                a.page-link href="#"  5
+              li.page-item
+                a.page-link aria-label="Next" href="#" 
+                  span aria-hidden="true"  &raquo;
+                  span.sr-only Next
+          nav
+            ul.pagination.pagination-sm
+              li.page-item
+                a.page-link aria-label="Previous" href="#" 
+                  span aria-hidden="true"  &laquo;
+                  span.sr-only Previous
+              li.page-item
+                a.page-link href="#"  1
+              li.page-item
+                a.page-link href="#"  2
+              li.page-item
+                a.page-link href="#"  3
+              li.page-item
+                a.page-link href="#"  4
+              li.page-item
+                a.page-link href="#"  5
+              li.page-item
+                a.page-link aria-label="Next" href="#" 
+                  span aria-hidden="true"  &raquo;
+                  span.sr-only Next
+    .col-sm-6
+      article#navs-pager
+        h3 Pager
+        p
+          nav
+            ul.pager
+              li = link_to "Previous", "#"
+              li = link_to "Next", "#"
+          nav
+            ul.pager
+              li.pager-prev = link_to "Previous", "#"
+              li.pager-next = link_to "Next", "#"
+          nav
+            ul.pager
+              li.pager-prev.disabled = link_to "Previous", "#"
+              li.pager-next = link_to "Next", "#"

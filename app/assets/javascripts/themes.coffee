@@ -3,5 +3,10 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 $ ->
+  # Set navbar height
   height = document.getElementById("buttons").offsetHeight;
   ScrollPosStyler(document, window, height);
+
+  # Bootstrap js 
+  $('[data-toggle="tooltip"]').tooltip()
+  $('[data-toggle="popover"]').popover()

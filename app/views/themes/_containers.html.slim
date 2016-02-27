@@ -1,0 +1,161 @@
+section#containers
+  h2.section-title Containers
+  article#containers-jumbotron
+    h3 Jumbotron
+    p
+      .jumbotron
+        h1.display-3 Hello, world!
+        p.lead This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.
+        hr.m-y-2/
+        p It uses utility classes for typography and spacing to space content out within the larger container.
+        p.lead
+          a.btn.btn-primary.btn-lg href="#" role="button"  Learn more
+  article#containers-jumbotron-fluid
+    h3 Fluid jumbotron
+    p
+      .jumbotron.jumbotron-fluid
+        .container
+          h1.display-3 Fluid jumbotron
+          p.lead This is a modified jumbotron that occupies the entire horizontal space of its parent.
+  article#containers-cards
+    h3 Cards
+    p.lead Examples
+    .row
+      .col-sm-4
+        .card.card-block This is a basic card block
+        .card.card-block
+          h4.card-title Card title
+          p.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
+          a.card-link href="#" Card link
+          a.card-link href="#" Another link
+      .col-sm-4
+        .card
+          h3.card-header Featured card
+          .card-block 
+            h4.card-title Special title treatment
+            p.card-text With supporting text below as a natural lead-in to additional content.
+          .card-footer.text-muted Card footer
+      .col-sm-4
+        .card.card-inverse style=("background-color: #333; border-color: #333;")
+          .card-block
+            h3.card-title Special title treatment
+            p.card-text With supporting text below as a natural lead-in to additional content.
+            a.btn.btn-primary href="#"  Button
+    .row
+      .col-sm-12
+        .card-group
+          .card.card-inverse.card-primary.text-xs-center
+            .card-block
+              blockquote.card-blockquote
+                p Primary
+                p.card-text Text goes here
+          .card.card-inverse.card-success.text-xs-center
+            .card-block
+              blockquote.card-blockquote
+                p Success
+                p.card-text Text goes here
+          .card.card-inverse.card-info.text-xs-center
+            .card-block
+              blockquote.card-blockquote
+                p Info
+                p.card-text Text goes here
+          .card.card-inverse.card-warning.text-xs-center
+            .card-block
+              blockquote.card-blockquote
+                p Warning
+                p.card-text Text goes here
+          .card.card-inverse.card-danger.text-xs-center
+            .card-block
+              blockquote.card-blockquote
+                p Danger
+                p.card-text Text goes here
+    .row
+      .col-sm-12
+        br
+        p.lead Card groups
+        .card-group
+          .card
+            .card-block
+              h4.card-title Card title
+              p.card-text This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+              p.card-text
+                small.text-muted Last updated 3 mins ago
+          .card
+            .card-block
+              h4.card-title Card title
+              p.card-text This card has supporting text below as a natural lead-in to additional content.
+              p.card-text
+                small.text-muted Last updated 3 mins ago
+          .card
+            .card-block
+              h4.card-title Card title
+              p.card-text This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.
+              p.card-text
+                small.text-muted Last updated 3 mins ago
+    .row
+      .col-sm-12
+        br
+        p.lead Card decks
+        .card-deck-wrapper
+          .card-deck
+            .card
+              .card-block
+                h4.card-title Card title
+                p.card-text This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                p.card-text
+                  small.text-muted Last updated 3 mins ago
+            .card
+              .card-block
+                h4.card-title Card title
+                p.card-text This card has supporting text below as a natural lead-in to additional content.
+                p.card-text
+                  small.text-muted Last updated 3 mins ago
+            .card
+              .card-block
+                h4.card-title Card title
+                p.card-text This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.
+                p.card-text
+                  small.text-muted Last updated 3 mins ago
+  article#containers-list-groups
+    h3 List groups
+    .row
+      .col-sm-4
+        ul.list-group
+          li.list-group-item
+            span.label.label-default.label-pill.pull-xs-right 14
+            | Cras justo odio
+          li.list-group-item
+            span.label.label-default.label-pill.pull-xs-right 2
+            | Dapibus ac facilisis in
+          li.list-group-item
+            span.label.label-default.label-pill.pull-xs-right 1
+            | Morbi leo risus
+        br
+        .list-group
+          a.list-group-item.active href="#" 
+            | Cras justo odio
+          a.list-group-item href="#"  Dapibus ac facilisis in
+          a.list-group-item href="#"  Morbi leo risus
+      .col-sm-4
+        ul.list-group
+          li.list-group-item.list-group-item-success Dapibus ac facilisis in
+          li.list-group-item.list-group-item-info Cras sit amet nibh libero
+          li.list-group-item.list-group-item-warning Porta ac consectetur ac
+          li.list-group-item.list-group-item-danger Vestibulum at eros
+        br
+        .list-group
+          a.list-group-item.list-group-item-success href="#"  Dapibus ac facilisis in
+          a.list-group-item.list-group-item-info href="#"  Cras sit amet nibh libero
+          a.list-group-item.list-group-item-warning href="#"  Porta ac consectetur ac
+          a.list-group-item.list-group-item-danger href="#"  Vestibulum at eros
+      .col-sm-4
+        .list-group
+          a.list-group-item.active href="#" 
+            h4.list-group-item-heading List group item heading
+            p.list-group-item-text Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+          a.list-group-item href="#" 
+            h4.list-group-item-heading List group item heading
+            p.list-group-item-text Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+          a.list-group-item href="#" 
+            h4.list-group-item-heading List group item heading
+            p.list-group-item-text Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.

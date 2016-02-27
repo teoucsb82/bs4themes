@@ -42,10 +42,27 @@ article {
   }
 }
 
-#buttons {
+#buttons,
+#dialogs-popovers,
+#dialogs-tooltips {
   .btn-group .btn { margin-right: 0; }
   .btn { 
     margin-right: 0.5rem;
     &:last-child { margin-right: 0; }
   }
+}
+#indicators-labels {
+  .label { 
+    margin-right: 0.5rem;
+    &:last-child { margin-right: 0; }
+  }
+}
+.modal-example .modal {
+  position: relative;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  z-index: 1;
+  display: block;
 }
