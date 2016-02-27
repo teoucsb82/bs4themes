@@ -1,14 +1,67 @@
 section#typography
   h2.section-title Typography
-  .card.card-block.bg-faded
-    h1 h1. Bootstrap heading
-    h2 h2. Bootstrap heading
-    h3 h3. Bootstrap heading
-    h4 h4. Bootstrap heading
-    h5 h5. Bootstrap heading
-    h6 h6. Bootstrap heading
-  .card.card-block.bg-faded
-    h1.display-1 Display 1
-    h1.display-2 Display 2
-    h1.display-3 Display 3
-    h1.display-4 Display 4
+  article#typography-display-headings
+    h3 Display headings
+    p
+      h1.display-1 Display heading 1
+      h1.display-2 Display heading 2
+      h1.display-3 Display heading 3
+      h1.display-4 Display heading 4
+  article#typography-regular-headings
+    h3 Regular headings
+    p
+      h1 h1. Bootstrap heading
+      h2 h2. Bootstrap heading
+      h3 h3. Bootstrap heading
+      h4 h4. Bootstrap heading
+      h5 h5. Bootstrap heading
+      h6 h6. Bootstrap heading
+  
+  .row
+    .col-sm-4
+      article#typography-body-text
+        h3 Body text
+        p
+          | Lorem ipsum dolor sit amet. Cum sociis 
+          a href="#" natoque penatibus et magnis
+          |  dis parturient montes, nascetur ridiculus mus.
+        p
+          .text-muted This is an example of .text-muted
+          .text-primary This is an example of .text-primary
+          .text-success This is an example of .text-success
+          .text-info This is an example of .text-info
+          .text-warning This is an example of .text-warning
+          .text-danger This is an example of .text-danger
+    .col-sm-4
+      article#typography-text-emphasis
+        h3 Text emphasis
+        p 
+          p.lead This is an example of .lead text
+          p.small This line of text is meant to be treated as fine print.
+          p
+            | The following snippet of text is 
+            strong rendered as bold text
+            | .
+          p
+            | The following snippet of text is 
+            em rendered as italicized text
+            | .
+          p
+            | An abbreviation of the word attribute is 
+            abbr title="attribute"  attr
+            | .
+    .col-sm-4
+      article#typography-blockquotes
+        h3 Blockquotes
+        p
+          blockquote.blockquote
+            p.m-b-0 What's a... pederast, Walter?
+            footer.blockquote-footer 
+              | Donny
+              cite title="Source Title" The Big Lebowski
+        p
+          blockquote.blockquote.blockquote-reverse
+            p.m-b-0 Shut the fuck up, Donny.
+            footer.blockquote-footer 
+              | Walter
+              cite title="Source Title" The Big Lebowski

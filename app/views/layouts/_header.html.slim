@@ -1,14 +1,21 @@
 header
-  nav.navbar.navbar-light
+  nav.navbar.navbar-light.navbar-fixed-top
     .container
       = link_to "Home", root_url, class: "navbar-brand"
       ul.nav.navbar-nav
         li.nav-item.dropdown
-          a.nav-link.dropdown-toggle aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" href="#" role="button" 
-            | Themes
+          = link_to "Themes", "#", class: "nav-link dropdown-toggle", aria: { expanded: false, haspopup: true }, data: { toggle: "dropdown" }
           .dropdown-menu aria-labelledby="Preview" 
             - Theme.all.each do |theme|
               = link_to theme.capitalize, theme_path(theme), class: "dropdown-item"
-
+        - if action_name == "show"
+          li.nav-item.dropdown
+            = link_to params[:id].capitalize, "#", class: "nav-link dropdown-toggle", aria: { expanded: false, haspopup: true }, data: { toggle: "dropdown" }
+            .dropdown-menu aria-labelledby="Preview" 
+              = link_to "bootstrap.min.css (compiled)", "#", class: "dropdown-item"
+              = link_to "bootstrap.css (compiled)", "#", class: "dropdown-item"
+              .dropdown-divider
+              = link_to "#{params[:id]}_skin.scss", "#", class: "dropdown-item"
+              = link_to "#{params[:id]}_variables.scss", "#", class: "dropdown-item"
       ul.nav.navbar-nav.pull-xs-right
         li.nav-item.active = link_to "Download Bootstrap 4", "http://v4-alpha.getbootstrap.com/", class: "btn btn-primary", target: "_blank"

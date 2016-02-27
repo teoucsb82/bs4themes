@@ -1,16 +1,44 @@
 header {
-  margin-bottom: 1rem;
+  margin-bottom: 4rem;
+}
+.jumbotron {
+  margin-bottom: 30px;
+}
+section {
+  @extend .m-b-3;
+}
+article {
+  @extend .m-y-1;
 }
 .section-title {
   padding-bottom: 0.5rem;
   margin-bottom: 1rem;
-  border-bottom: 1px solid $gray-lighter;
+  border-bottom: 1px dotted $gray-lighter;
 }
 
 #sidebar {
   &.sps--blw {
     position: fixed;
-    top: 35px;
+    top: 55px;
+  }
+
+  &.nav-pills {
+    .nav-link {
+      display: block;
+      padding: $nav-link-padding;
+      border-left: 3px solid transparent;
+      @include border-radius($nav-pills-border-radius);
+      font-size: $font-size-sm;
+      color: $text-muted;
+    
+      &.active,
+      &.focus,
+      &:hover, {
+        border-left: 3px solid $brand-primary;
+        color: $brand-primary;
+        background-color: initial;
+      }
+    }
   }
 }
 
