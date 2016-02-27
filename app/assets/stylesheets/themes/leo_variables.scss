@@ -32,7 +32,7 @@ $gray-light:                #818a91 !default;
 $gray-lighter:              #eceeef !default;
 $gray-lightest:             #f7f7f9 !default;
 
-$brand-primary:             #0275d8 !default;
+$brand-primary:             #009246 !default;
 $brand-success:             #5cb85c !default;
 $brand-info:                #5bc0de !default;
 $brand-warning:             #f0ad4e !default;
@@ -44,8 +44,8 @@ $brand-danger:              #d9534f !default;
 // Quickly modify global styling by enabling or disabling optional features.
 
 $enable-flex:               false !default;
-$enable-rounded:            true !default;
-$enable-shadows:            false !default;
+$enable-rounded:            false !default;
+$enable-shadows:            true !default;
 $enable-gradients:          false !default;
 $enable-transitions:        false !default;
 $enable-hover-media-query:  false !default;
@@ -141,8 +141,9 @@ $grid-gutter-width:          1.875rem !default; // 30px
 // Typography
 //
 // Font, line-height, and color for body text, headings, and more.
+@import url(//fonts.googleapis.com/css?family=Lato|Copse:400italic,700italic,400,700);
 
-$font-family-sans-serif:     "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-sans-serif:     "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $font-family-serif:          Georgia, "Times New Roman", Times, serif !default;
 $font-family-monospace:      Menlo, Monaco, Consolas, "Courier New", monospace !default;
 $font-family-base:           $font-family-sans-serif !default;
@@ -162,10 +163,10 @@ $font-size-h4:               1.5rem !default;
 $font-size-h5:               1.25rem !default;
 $font-size-h6:               1rem !default;
 
-$display1-size:               5rem !default;
-$display2-size:               4.5rem !default;
-$display3-size:               3.5rem !default;
-$display4-size:               2.5rem !default;
+$display1-size:               6rem !default;
+$display2-size:               5.5rem !default;
+$display3-size:               4.5rem !default;
+$display4-size:               3.5rem !default;
 
 $display1-weight:             300 !default;
 $display2-weight:             300 !default;

@@ -1,4 +1,7 @@
 class PagesController < ApplicationController
-  def home
+  def portfolio 
+  end
+
+  def resume 
   end
 end

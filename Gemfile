@@ -34,3 +34,5 @@ gem 'font-awesome-rails'
 #back end
 gem 'simple_form'
 gem 'slim-rails'
+gem 'friendly_id', '~> 5.1.0'
+gem 'devise'

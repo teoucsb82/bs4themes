@@ -1,0 +1,14 @@
+header
+  nav.navbar.navbar-light
+    .container
+      = link_to "Home", root_url, class: "navbar-brand"
+      ul.nav.navbar-nav
+        li.nav-item.dropdown
+          a.nav-link.dropdown-toggle aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" href="#" role="button" 
+            | Themes
+          .dropdown-menu aria-labelledby="Preview" 
+            - Theme.all.each do |theme|
+              = link_to theme.capitalize, theme_path(theme), class: "dropdown-item"
+
+      ul.nav.navbar-nav.pull-xs-right
+        li.nav-item.active = link_to "Download Bootstrap 4", "http://v4-alpha.getbootstrap.com/", class: "btn btn-primary", target: "_blank"

@@ -1,0 +1,31 @@
+.blog-header
+  .container
+    h1.blog-title Teo Dell'Amico
+    p.lead.blog-description Full stack developer. Hi.
+.container
+  .row
+    .col-sm-8.blog-main
+      = render @blogs
+      nav
+        ul.pager
+          li
+            a href="#"  Older
+          li.disabled
+            a href="#"  Newer
+    /! /.blog-main
+    .col-sm-3.col-sm-offset-1.blog-sidebar
+      .sidebar-module
+        h4 Archives
+        ol.list-unstyled
+          - (Date.today.year..@blogs.first.created_at.year).to_a.each do |year|
+            - @blogs.where(:created_at => year).first
+            li = link_to "month #{year}", root_url
+      .sidebar-module
+        h4 Elsewhere
+        ol.list-unstyled
+          li
+            a href="#"  GitHub
+          li
+            a href="#"  Twitter
+          li
+            a href="#"  Facebook
