@@ -69,7 +69,8 @@ article {
 }
 
 
-.nav-btn-group {
+.navbar .nav-btn-group {
+  padding: 0;
   &:hover,
   &:focus {
     background: transparent !important;
