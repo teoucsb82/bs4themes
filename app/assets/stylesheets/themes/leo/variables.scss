@@ -32,11 +32,11 @@ $gray-light:                #818a91 !default;
 $gray-lighter:              #eceeef !default;
 $gray-lightest:             #f7f7f9 !default;
 
-$brand-primary:             #0275d8 !default;
-$brand-success:             #5cb85c !default;
-$brand-info:                #5bc0de !default;
-$brand-warning:             #f0ad4e !default;
-$brand-danger:              #d9534f !default;
+$brand-primary:             #009688 !default; // google teal 500
+$brand-success:             #00BFA5 !default; // google teal A700
+$brand-info:                #00B8D4 !default; // google cyan A700
+$brand-warning:             #FF6D00 !default; // google orange A700
+$brand-danger:              #D50000 !default; // google red A700
 
 
 // Options
@@ -44,9 +44,10 @@ $brand-danger:              #d9534f !default;
 // Quickly modify global styling by enabling or disabling optional features.
 
 $enable-flex:               false !default;
-$enable-rounded:            true !default;
-$enable-shadows:            false !default;
-$enable-transitions:        false !default;
+$enable-rounded:            false !default;
+$enable-shadows:            true !default;
+$enable-transitions:        true !default;
+$enable-gradients:          true !default;
 $enable-hover-media-query:  false !default;
 $enable-grid-classes:       true !default;
 
@@ -140,8 +141,9 @@ $grid-gutter-width:          1.875rem !default; // 30px
 // Typography
 //
 // Font, line-height, and color for body text, headings, and more.
+@import url(//fonts.googleapis.com/css?family=Droid+Sans:400italic,700italic,400,700);
 
-$font-family-sans-serif:     "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-sans-serif:     "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $font-family-serif:          Georgia, "Times New Roman", Times, serif !default;
 $font-family-monospace:      Menlo, Monaco, Consolas, "Courier New", monospace !default;
 $font-family-base:           $font-family-sans-serif !default;
@@ -161,10 +163,10 @@ $font-size-h4:               1.5rem !default;
 $font-size-h5:               1.25rem !default;
 $font-size-h6:               1rem !default;
 
-$display1-size:               5rem !default;
-$display2-size:               4.5rem !default;
-$display3-size:               3.5rem !default;
-$display4-size:               2.5rem !default;
+$display1-size:               6rem !default;
+$display2-size:               5.5rem !default;
+$display3-size:               4.5rem !default;
+$display4-size:               3.5rem !default;
 
 $display1-weight:             300 !default;
 $display2-weight:             300 !default;
@@ -369,18 +371,18 @@ $navbar-padding-vertical:           ($spacer / 2) !default;
 
 $navbar-dark-color:                 rgba(255,255,255,.5) !default;
 $navbar-dark-hover-color:           rgba(255,255,255,.75) !default;
-$navbar-dark-active-color:          rgba(255,255,255,1) !default;
+$navbar-dark-active-color:          #fff;
 $navbar-dark-disabled-color:        rgba(255,255,255,.25) !default;
 
 $navbar-light-color:                rgba(0,0,0,.3) !default;
 $navbar-light-hover-color:          rgba(0,0,0,.6) !default;
-$navbar-light-active-color:         rgba(0,0,0,.8) !default;
+$navbar-light-active-color:         $brand-primary;
 $navbar-light-disabled-color:       rgba(0,0,0,.15) !default;
 
 
 // Navs
 
-$nav-link-padding:                          .5em 1em !default;
+$nav-link-padding:                          .4em 1em !default;
 $nav-link-hover-bg:                         $gray-lighter !default;
 
 $nav-disabled-link-color:                   $gray-light !default;

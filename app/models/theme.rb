@@ -1,5 +1,5 @@
 class Theme
   def self.all
-    %w(leo).sort
+    %w(default leo orion slice).sort
   end
 end

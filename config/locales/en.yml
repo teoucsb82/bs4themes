@@ -20,4 +20,20 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  themes:
+    default:
+      subtitle: "Bootstrap 4 Defaults"
+      lead: "bootstrap 4 seo"
+      nav_classes: "navbar-light bg-faded"
+    leo:
+      subtitle: "ooh la la it's leo"
+      lead: "bootstrap 4 seo"
+      nav_classes: "navbar-dark bg-primary"
+    orion:
+      subtitle: "ooh la la it's orion"
+      lead: "bootstrap 4 seo"
+      nav_classes: "navbar-light bg-primary"
+    slice:
+      subtitle: "So fresh, so clean"
+      lead: "Ubuntu, orange/cool-gray/purple, rounded/shadows"
+      nav_classes: "navbar-dark bg-primary"

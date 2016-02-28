@@ -10,3 +10,7 @@ $ ->
   # Bootstrap js 
   $('[data-toggle="tooltip"]').tooltip()
   $('[data-toggle="popover"]').popover()
+
+  $(".js-navbar-toggle").click ->
+    $("header .navbar").removeClass("navbar-light navbar-dark bg-primary bg-inverse bg-faded")
+    $("header .navbar").addClass($(this).data("classes"))

@@ -2,7 +2,10 @@ doctype html
 html
   head
     title
-    = stylesheet_link_tag  'application', media: 'all'
+    - if action_name == "show"
+      = stylesheet_link_tag "themes/#{params[:id]}/manifest", media: 'all'
+    - else
+      = stylesheet_link_tag 'application', media: 'all'
     = csrf_meta_tags
     meta name="viewport" content="width=device-width, initial-scale=1" 
   body data-spy="scroll" data-target="#sidebar"

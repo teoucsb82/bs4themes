@@ -51,6 +51,13 @@ article {
     &:last-child { margin-right: 0; }
   }
 }
+.navbar {
+  .form-inline {
+    .form-control {
+      margin-right: $spacer-x / 2;
+    }
+  }
+}
 #indicators-labels {
   .label { 
     margin-right: 0.5rem;
@@ -65,4 +72,27 @@ article {
   left: auto;
   z-index: 1;
   display: block;
+}
+
+
+.nav-btn-group {
+  &:hover,
+  &:focus {
+    background: transparent !important;
+  }
+  .btn-group {
+    margin-left: $spacer-x / 2;
+    .btn {
+      padding-top:    .425rem;
+      padding-bottom: .425rem;
+      margin-bottom: 0;
+    }
+  }
+}
+
+#focusedInput {
+  border-color: $input-border-focus;
+  outline: none;
+  $shadow: $input-box-shadow, 0 0 8px $input-box-shadow-focus;
+  @include box-shadow($shadow);
 }

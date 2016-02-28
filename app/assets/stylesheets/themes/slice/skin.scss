@@ -1,0 +1,192 @@
+// images           ===========================================================
+
+
+// code             ===========================================================
+
+
+// grid             ===========================================================
+
+
+// type             ===========================================================
+body {
+  font-family: $font-family-body;
+}
+
+// tables           ===========================================================
+.table-inverse,
+.thead-inverse,
+.thead-inverse th {
+  background-color: $brand-inverse;
+}
+
+// forms            ===========================================================
+
+
+// buttons          ===========================================================
+
+
+// animation        ===========================================================
+
+
+// dropdown         ===========================================================
+
+
+// button-group     ===========================================================
+
+
+// input-group      ===========================================================
+
+
+// custom-forms     ===========================================================
+
+
+// nav              ===========================================================
+
+
+// navbar           ===========================================================
+.navbar { 
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  
+  &,
+  .navbar-brand {
+    line-height: 33px;
+  }
+  .navbar-nav .nav-item + .nav-item {
+    margin-left: $spacer-x / 2;
+  }
+  .navbar-nav .nav-link { 
+    padding: 0;
+  }
+  .nav-item {
+    padding: 0 $spacer-x;
+
+    @if $enable-rounded {
+      &:hover,
+      &:focus,
+      &.active {
+        border-radius: $border-radius-lg;
+      }
+    }
+  }
+  .nav-item,
+  .form-inline {
+    line-height: 40px;
+  }
+  // primary active/hover
+  &.bg-primary {
+    .nav-item {
+      &:hover,
+      &:focus,
+      &.active {
+        @if $enable-gradients {
+          @include gradient-vertical(mix(black, $brand-primary, 25%), $brand-primary);
+        } @else {
+          background: darken($brand-primary, 15%);
+        }
+      }
+    }  
+    @if $enable-gradients {
+      @include gradient-vertical(mix(white, $brand-primary, 40%), $brand-primary);
+    }
+  }
+  &.bg-inverse {
+    .nav-item {
+      &:hover,
+      &:focus,
+      &.active {
+        @if $enable-gradients {
+          @include gradient-vertical(mix(black, $brand-primary, 25%), $brand-primary);
+        } @else {
+          background: darken($brand-primary, 15%);
+        }
+      }
+    } 
+    @if $enable-gradients {
+      @include gradient-vertical(mix(white, $brand-inverse, 40%), $brand-inverse);
+    } @else {
+      background-color: $brand-inverse;
+    }
+
+    .dropdown-menu {
+      background-color: $brand-inverse;
+
+      .dropdown-item:focus, .dropdown-item:hover {
+        background-color: $brand-primary;
+      }
+    }
+  }
+  &.navbar-light {
+    .navbar-nav .nav-link,
+    .navbar-nav .nav-link:focus, .navbar-nav .nav-link:hover {
+      color: $brand-primary;
+    }
+    .nav-item {
+      &:hover,
+      &:focus,
+      &.active {
+        @if $enable-gradients {
+          @include gradient-vertical(mix(black, $brand-primary, 25%), $brand-primary);
+        } @else {
+          background: darken($brand-primary, 15%);
+        }
+        .nav-link { color: #fff; }
+      }
+    } 
+  }
+  &.navbar-dark {
+    .navbar-nav .nav-link,
+    .navbar-nav .nav-link:focus, .navbar-nav .nav-link:hover {
+      color: #fff;
+    }
+  }
+}
+
+// card             ===========================================================
+
+
+// breadcrumb       ===========================================================
+
+
+// pagination       ===========================================================
+
+
+// pager            ===========================================================
+
+
+// labels           ===========================================================
+
+
+// jumbotron        ===========================================================
+
+
+// alert            ===========================================================
+
+
+// progress         ===========================================================
+
+
+// media            ===========================================================
+
+
+// list-group       ===========================================================
+
+
+// responsive-embed ===========================================================
+
+
+// close            ===========================================================
+
+
+// modal            ===========================================================
+
+
+// tooltip          ===========================================================
+
+
+// popover          ===========================================================
+
+
+// carousel         ===========================================================
+
+
