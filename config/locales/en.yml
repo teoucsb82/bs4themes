@@ -22,8 +22,8 @@
 en:
   themes:
     blackboard:
-      subtitle: "akldjfaklfj"
-      lead: "Ubuntu, orange/cool-gray/purple, rounded/shadows"
+      subtitle: "Clear and bold"
+      lead: ""
     default:
       subtitle: "Bootstrap 4 Defaults"
       lead: "bootstrap 4 seo"

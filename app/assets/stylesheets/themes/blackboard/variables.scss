@@ -32,11 +32,11 @@ $gray-light:                #818a91 !default;
 $gray-lighter:              #eceeef !default;
 $gray-lightest:             #f7f7f9 !default;
 
-$brand-primary:             #B71C1C !default; // google red 900
-$brand-success:             #5cb85c !default;
-$brand-info:                #FF1744 !default; // google red A400
-$brand-warning:             #f0ad4e !default;
-$brand-danger:              #d9534f !default;
+$brand-primary:             mix(black, #B71C1C, 40%) !default; // google red 900
+$brand-success:             #1B5E20 !default; // google green 900
+$brand-info:                mix(black, #D500F9, 40%) !default; // google purple A700
+$brand-warning:             #F57F17 !default; // google yellow 900
+$brand-danger:              #F50057 !default; // google pink A400
 
 
 // Options
@@ -44,7 +44,7 @@ $brand-danger:              #d9534f !default;
 // Quickly modify global styling by enabling or disabling optional features.
 
 $enable-flex:               false !default;
-$enable-rounded:            true !default;
+$enable-rounded:            false !default;
 $enable-shadows:            false !default;
 $enable-transitions:        false !default;
 $enable-hover-media-query:  false !default;
@@ -84,7 +84,7 @@ $border-width:               1px !default;
 //
 // Settings for the `<body>` element.
 
-$body-bg:                    $gray-dark !default;
+$body-bg:                    #111 !default;
 $body-color:                 #fff !default;
 
 
@@ -122,10 +122,10 @@ $grid-breakpoints: (
 // Define the maximum width of `.container` for different screen sizes.
 
 $container-max-widths: (
-  sm: 576px,
-  md: 720px,
-  lg: 940px,
-  xl: 1140px
+  sm: 576px * 0.8,
+  md: 720px * 0.8,
+  lg: 940px * 0.8,
+  xl: 1140px * 0.8
 ) !default;
 
 
@@ -188,7 +188,7 @@ $abbr-border-color:           $gray-light !default;
 
 $blockquote-small-color:      $gray-light !default;
 $blockquote-font-size:        ($font-size-base * 1.25) !default;
-$blockquote-border-color:     $gray-lighter !default;
+$blockquote-border-color:     $brand-primary !default;
 
 $hr-border-color:             rgba(0,0,0,.1) !default;
 $hr-border-width:             $border-width !default;

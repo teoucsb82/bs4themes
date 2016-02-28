@@ -1,7 +1,7 @@
 header
   nav.navbar.navbar-fixed-top class=@navbar_classes
     .container
-      = link_to "#{action_name == 'index' ? 'BS4 Themes' : 'Home'}", root_url, class: "navbar-brand"
+      = link_to content_tag(:i, nil, class: 'fa fa-home'), root_url, class: "navbar-brand"
       ul.nav.navbar-nav
         li.nav-item.dropdown
           = link_to "Themes", "#", class: "nav-link dropdown-toggle", aria: { expanded: false, haspopup: true }, data: { toggle: "dropdown" }

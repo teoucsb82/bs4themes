@@ -1,4 +1,4 @@
-section#splash
+section#splash.m-t-3
   .jumbotron.text-xs-center
     h1.jumbotron-heading Bootstrap 4 Themes
     p.lead.text-muted 
@@ -10,15 +10,16 @@ section#splash
       a.btn.btn-lg.btn-secondary href="#"  Secondary action
 
 section#previews
-  .row
-    - Theme.all.each do |theme|
-      - next if theme == "default"
-      .col-sm-4
-        .card
-          .preview-theme class="preview-theme-#{theme}"
-            = render partial: 'preview', locals: { theme: theme }
-          .card-block.text-xs-center.bg-faded.m-t-1
-            p.lead.p-y-1 = theme.capitalize
-            p
-              = link_to "Preview", theme_path(theme), class: "btn btn-primary btn-lg"
-              = link_to "Download", theme_path(theme), class: "btn btn-primary btn-lg"
+  .container
+    .row
+      - Theme.all.each do |theme|
+        - next if theme == "default"
+        .col-sm-4
+          .card
+            .preview-theme class="preview-theme-#{theme}"
+              = render partial: 'preview', locals: { theme: theme }
+            .card-block.text-xs-center.bg-faded.m-t-1
+              p.lead.p-y-1 = theme.capitalize
+              p
+                = link_to "Preview", theme_path(theme), class: "btn btn-primary btn-lg"
+                = link_to "Download", theme_path(theme), class: "btn btn-primary btn-lg"

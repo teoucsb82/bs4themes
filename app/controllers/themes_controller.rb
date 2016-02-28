@@ -1,7 +1,7 @@
 class ThemesController < ApplicationController
   def index
     @themes = Theme.all
-    @navbar_classes = 'navbar-light bg-faded'
+    @navbar_classes = 'navbar-dark bg-inverse'
   end
 
   def show
