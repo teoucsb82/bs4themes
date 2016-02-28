@@ -10,6 +10,6 @@ html
     meta name="viewport" content="width=device-width, initial-scale=1" 
   body data-spy="scroll" data-target="#sidebar"
     = render 'layouts/header'
-    .container
+    .container.m-t-3.p-t-2
       = yield
     = javascript_include_tag 'application', async: Rails.env.production?

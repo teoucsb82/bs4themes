@@ -1,16 +1,17 @@
-.card-group.m-b-1
-  .card.card-block.card-inverse.card-primary
-    blockquote.card-blockquote
-      h1.display-1 = params[:id].capitalize
-  .card.card-block.card-primary-outline
-    blockquote.blockquote-reverse
-      h3.card-title = t("themes.#{params[:id]}.subtitle")
-      = link_to content_tag(:i, nil, class: "fa fa-cloud-download") + " Download #{params[:id].capitalize}.scss.zip", "#", class: "btn btn-primary btn-lg"
+.card-deck-wrapper.m-b-1
+  .card-deck
+    .card.card-block.card-inverse.card-primary
+      blockquote.card-blockquote
+        h1.display-1 = params[:id].capitalize
+    .card.card-block.card-primary-outline
+      blockquote.blockquote-reverse
+        h3.card-title = t("themes.#{params[:id]}.subtitle")
+        = link_to content_tag(:i, nil, class: "fa fa-cloud-download") + " Download #{params[:id].capitalize}.scss.zip", "#", class: "btn btn-primary btn-lg"
 
 .row
-  .col-sm-2 
+  .col-sm-2.hidden-md-down
     = render 'sidebar'
-  .col-sm-10
+  .col-lg-10
     = render 'navbar'
     = render 'buttons'
     = render 'typography'

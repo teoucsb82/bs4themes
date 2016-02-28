@@ -4,75 +4,81 @@ section#navbar
     p
       nav.navbar.navbar-dark.bg-inverse
         a.navbar-brand href="#"  Navbar
-        ul.nav.navbar-nav
-          li.nav-item.active
-            a.nav-link href="#" 
-              | Home
-              span.sr-only (current)
-          li.nav-item
-            a.nav-link href="#"  Features
-          li.nav-item
-            a.nav-link href="#"  Pricing
-          li.nav-item
-            a.nav-link href="#"  About
-          li.nav-item.dropdown
-            = link_to "Dropdown", "#", class: "nav-link dropdown-toggle", aria: { expanded: false, haspopup: true }, data: { toggle: "dropdown" }
-            .dropdown-menu
-              a.dropdown-item href="#"  Action
-              a.dropdown-item href="#"  Another action
-              a.dropdown-item href="#"  Something else here
-              .dropdown-divider
-              a.dropdown-item href="#"  Separated link
-        form.form-inline.pull-xs-right
-          input.form-control placeholder="Search" type="text"
-          button.btn.btn-info-outline type="submit"  Search
+        button.navbar-toggler.hidden-md-up.pull-xs-right data-target="#collapsed-bg-inverse" data-toggle="collapse" type="button" ☰
+        #collapsed-bg-inverse.collapse.navbar-toggleable-sm
+          ul.nav.navbar-nav
+            li.nav-item.active
+              a.nav-link href="#" 
+                | Home
+                span.sr-only (current)
+            li.nav-item
+              a.nav-link href="#"  Features
+            li.nav-item
+              a.nav-link href="#"  Pricing
+            li.nav-item
+              a.nav-link href="#"  About
+            li.nav-item.dropdown
+              = link_to "Dropdown", "#", class: "nav-link dropdown-toggle", aria: { expanded: false, haspopup: true }, data: { toggle: "dropdown" }
+              .dropdown-menu
+                a.dropdown-item href="#"  Action
+                a.dropdown-item href="#"  Another action
+                a.dropdown-item href="#"  Something else here
+                .dropdown-divider
+                a.dropdown-item href="#"  Separated link
+          form.form-inline.pull-xs-right
+            input.form-control placeholder="Search" type="text"
+            button.btn.btn-info-outline type="submit"  Search
     p
       nav.navbar.navbar-dark.bg-primary
         a.navbar-brand href="#"  Navbar
-        ul.nav.navbar-nav
-          li.nav-item.active
-            a.nav-link href="#" 
-              | Home
-              span.sr-only (current)
-          li.nav-item
-            a.nav-link href="#"  Features
-          li.nav-item
-            a.nav-link href="#"  Pricing
-          li.nav-item
-            a.nav-link href="#"  About
-          li.nav-item.dropdown
-            = link_to "Dropdown", "#", class: "nav-link dropdown-toggle", aria: { expanded: false, haspopup: true }, data: { toggle: "dropdown" }
-            .dropdown-menu
-              a.dropdown-item href="#"  Action
-              a.dropdown-item href="#"  Another action
-              a.dropdown-item href="#"  Something else here
-              .dropdown-divider
-              a.dropdown-item href="#"  Separated link
-        form.form-inline.pull-xs-right
-          input.form-control placeholder="Search" type="text" /
-          button.btn.btn-secondary-outline type="submit"  Search
+        button.navbar-toggler.hidden-md-up.pull-xs-right data-target="#collapsed-bg-primary" data-toggle="collapse" type="button" ☰
+        #collapsed-bg-primary.collapse.navbar-toggleable-sm
+          ul.nav.navbar-nav
+            li.nav-item.active
+              a.nav-link href="#" 
+                | Home
+                span.sr-only (current)
+            li.nav-item
+              a.nav-link href="#"  Features
+            li.nav-item
+              a.nav-link href="#"  Pricing
+            li.nav-item
+              a.nav-link href="#"  About
+            li.nav-item.dropdown
+              = link_to "Dropdown", "#", class: "nav-link dropdown-toggle", aria: { expanded: false, haspopup: true }, data: { toggle: "dropdown" }
+              .dropdown-menu
+                a.dropdown-item href="#"  Action
+                a.dropdown-item href="#"  Another action
+                a.dropdown-item href="#"  Something else here
+                .dropdown-divider
+                a.dropdown-item href="#"  Separated link
+          form.form-inline.pull-xs-right
+            input.form-control placeholder="Search" type="text" /
+            button.btn.btn-secondary-outline type="submit"  Search
     p
       nav.navbar.navbar-light
         a.navbar-brand href="#"  Navbar
-        ul.nav.navbar-nav
-          li.nav-item.active
-            a.nav-link href="#" 
-              | Home
-              span.sr-only (current)
-          li.nav-item
-            a.nav-link href="#"  Features
-          li.nav-item
-            a.nav-link href="#"  Pricing
-          li.nav-item
-            a.nav-link href="#"  About
-          li.nav-item.dropdown
-            = link_to "Dropdown", "#", class: "nav-link dropdown-toggle", aria: { expanded: false, haspopup: true }, data: { toggle: "dropdown" }
-            .dropdown-menu
-              a.dropdown-item href="#"  Action
-              a.dropdown-item href="#"  Another action
-              a.dropdown-item href="#"  Something else here
-              .dropdown-divider
-              a.dropdown-item href="#"  Separated link
-        form.form-inline.pull-xs-right
-          input.form-control placeholder="Search" type="text" /
-          button.btn.btn-primary-outline type="submit"  Search
+        button.navbar-toggler.hidden-md-up.pull-xs-right data-target="#collapsed-bg-faded" data-toggle="collapse" type="button" ☰
+        #collapsed-bg-faded.collapse.navbar-toggleable-sm
+          ul.nav.navbar-nav
+            li.nav-item.active
+              a.nav-link href="#" 
+                | Home
+                span.sr-only (current)
+            li.nav-item
+              a.nav-link href="#"  Features
+            li.nav-item
+              a.nav-link href="#"  Pricing
+            li.nav-item
+              a.nav-link href="#"  About
+            li.nav-item.dropdown
+              = link_to "Dropdown", "#", class: "nav-link dropdown-toggle", aria: { expanded: false, haspopup: true }, data: { toggle: "dropdown" }
+              .dropdown-menu
+                a.dropdown-item href="#"  Action
+                a.dropdown-item href="#"  Another action
+                a.dropdown-item href="#"  Something else here
+                .dropdown-divider
+                a.dropdown-item href="#"  Separated link
+          form.form-inline.pull-xs-right
+            input.form-control placeholder="Search" type="text" /
+            button.btn.btn-primary-outline type="submit"  Search
