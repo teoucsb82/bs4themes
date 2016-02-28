@@ -4,8 +4,8 @@
 
 $ ->
   # Set themes side navbar affix height
-  if $("#buttons").length
-    height = $("#buttons").offsetHeight
+  if $("#navbar").length
+    height = document.getElementById("navbar").offsetHeight
     height = height - 110;
     ScrollPosStyler(document, window, height);
 

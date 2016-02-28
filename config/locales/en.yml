@@ -21,12 +21,18 @@
 
 en:
   themes:
-    elena:
-      subtitle: "Don't call it goth"
+    blackboard:
+      subtitle: "akldjfaklfj"
       lead: "Ubuntu, orange/cool-gray/purple, rounded/shadows"
     default:
       subtitle: "Bootstrap 4 Defaults"
       lead: "bootstrap 4 seo"
+    elena:
+      subtitle: "Bold and daring"
+      lead: "Red and black, venom lack"
+    lacey:
+      subtitle: "laksdjf"
+      lead: "lakdjf"
     leo:
       subtitle: "ooh la la it's leo"
       lead: "bootstrap 4 seo"

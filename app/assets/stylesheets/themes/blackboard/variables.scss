@@ -32,9 +32,9 @@ $gray-light:                #818a91 !default;
 $gray-lighter:              #eceeef !default;
 $gray-lightest:             #f7f7f9 !default;
 
-$brand-primary:             #0275d8 !default;
+$brand-primary:             #B71C1C !default; // google red 900
 $brand-success:             #5cb85c !default;
-$brand-info:                #5bc0de !default;
+$brand-info:                #FF1744 !default; // google red A400
 $brand-warning:             #f0ad4e !default;
 $brand-danger:              #d9534f !default;
 
@@ -84,8 +84,8 @@ $border-width:               1px !default;
 //
 // Settings for the `<body>` element.
 
-$body-bg:                    #fff !default;
-$body-color:                 $gray-dark !default;
+$body-bg:                    $gray-dark !default;
+$body-color:                 #fff !default;
 
 
 // Links
@@ -140,14 +140,14 @@ $grid-gutter-width:          1.875rem !default; // 30px
 // Typography
 //
 // Font, line-height, and color for body text, headings, and more.
-
-$font-family-sans-serif:     "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+@import url(//fonts.googleapis.com/css?family=Permanent+Marker|Rock+Salt|Special+Elite:400italic,700italic,400,700);
+$font-family-sans-serif:     "Special Elite", Helvetica, Arial, sans-serif !default;
 $font-family-serif:          Georgia, "Times New Roman", Times, serif !default;
 $font-family-monospace:      Menlo, Monaco, Consolas, "Courier New", monospace !default;
 $font-family-base:           $font-family-sans-serif !default;
 
 // Pixel value used to responsively scale all typography. Applied to the `<html>` element.
-$font-size-root:             16px !default;
+$font-size-root:             14px !default;
 
 $font-size-base:             1rem !default;
 $font-size-lg:               1.25rem !default;
@@ -174,7 +174,7 @@ $display4-weight:             300 !default;
 $line-height:                1.5 !default;
 
 $headings-margin-bottom:     ($spacer / 2) !default;
-$headings-font-family:       inherit !default;
+$headings-font-family:       "Permanent Marker", "Rock Salt", Helvetica, Arial, sans-serif !default;
 $headings-font-weight:       500 !default;
 $headings-line-height:       1.1 !default;
 $headings-color:             inherit !default;
