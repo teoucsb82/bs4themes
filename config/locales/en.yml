@@ -21,6 +21,9 @@
 
 en:
   themes:
+    elena:
+      subtitle: "Don't call it goth"
+      lead: "Ubuntu, orange/cool-gray/purple, rounded/shadows"
     default:
       subtitle: "Bootstrap 4 Defaults"
       lead: "bootstrap 4 seo"

@@ -1,7 +1,7 @@
 header
   nav.navbar.navbar-fixed-top class=@navbar_classes
     .container
-      = link_to "Home", root_url, class: "navbar-brand"
+      = link_to "#{action_name == 'index' ? 'BS4 Themes' : 'Home'}", root_url, class: "navbar-brand"
       ul.nav.navbar-nav
         li.nav-item.dropdown
           = link_to "Themes", "#", class: "nav-link dropdown-toggle", aria: { expanded: false, haspopup: true }, data: { toggle: "dropdown" }
@@ -11,32 +11,22 @@ header
             - Theme.all.each do |theme|
               - next if theme == "default"
               = link_to theme.capitalize, theme_path(theme), class: "dropdown-item"
-        - if action_name == "show"
-          ul.nav.navbar-nav.hidden-md-down
-            li.nav-item.nav-btn-group 
-              span Navbar color
-              .btn-group data-toggle="buttons" 
-                label.btn.btn-primary.js-navbar-toggle data-classes="navbar-light bg-faded" 
-                  input autocomplete="off" checked="" name="options" type="radio" Light
-                label.btn.btn-primary.js-navbar-toggle data-classes="navbar-dark bg-primary"
-                  input autocomplete="off" name="options" type="radio" Primary
-                label.btn.btn-primary.js-navbar-toggle data-classes="navbar-dark bg-inverse"
-                  input autocomplete="off" name="options" type="radio" Dark
-          ul.nav.navbar-nav.hidden-lg-up.pull-xs-right
-            li.nav-item.nav-btn-group 
-              .btn-group data-toggle="buttons" 
-                label.btn.btn-sm.btn-primary.js-navbar-toggle data-classes="navbar-light bg-faded" 
-                  input autocomplete="off" checked="" name="options" type="radio" Light
-                label.btn.btn-sm.btn-primary.js-navbar-toggle data-classes="navbar-dark bg-primary"
-                  input autocomplete="off" name="options" type="radio" Primary
-                label.btn.btn-sm.btn-primary.js-navbar-toggle data-classes="navbar-dark bg-inverse"
-                  input autocomplete="off" name="options" type="radio" Dark
-        - if action_name == "show"
-          ul.nav.navbar-nav.hidden-md-down.pull-xs-right
-            li.nav-item.dropdown
-              = link_to params[:id].capitalize, "#", class: "nav-link dropdown-toggle", aria: { expanded: false, haspopup: true }, data: { toggle: "dropdown" }
-              .dropdown-menu.dropdown-menu-right aria-labelledby="Preview" 
-                = link_to "#{params[:id]}.scss.zip", "#", class: "dropdown-item"
-                .dropdown-divider
-                = link_to "#{params[:id]}_skin.scss", "#", class: "dropdown-item"
-                = link_to "#{params[:id]}_variables.scss", "#", class: "dropdown-item"
+        ul.nav.navbar-nav.hidden-md-down.pull-xs-right
+          li.nav-item.nav-btn-group 
+            span Navbar style 
+            .btn-group data-toggle="buttons" 
+              label.btn.btn-primary.js-navbar-toggle data-classes="navbar-light bg-faded" 
+                input autocomplete="off" checked="" name="options" type="radio" Light
+              label.btn.btn-primary.js-navbar-toggle data-classes="navbar-dark bg-primary"
+                input autocomplete="off" name="options" type="radio" Primary
+              label.btn.btn-primary.js-navbar-toggle data-classes="navbar-dark bg-inverse"
+                input autocomplete="off" name="options" type="radio" Dark
+        ul.nav.navbar-nav.hidden-lg-up.pull-xs-right
+          li.nav-item.nav-btn-group 
+            .btn-group data-toggle="buttons" 
+              label.btn.btn-sm.btn-primary.js-navbar-toggle data-classes="navbar-light bg-faded" 
+                input autocomplete="off" checked="" name="options" type="radio" Light
+              label.btn.btn-sm.btn-primary.js-navbar-toggle data-classes="navbar-dark bg-primary"
+                input autocomplete="off" name="options" type="radio" Primary
+              label.btn.btn-sm.btn-primary.js-navbar-toggle data-classes="navbar-dark bg-inverse"
+                input autocomplete="off" name="options" type="radio" Dark

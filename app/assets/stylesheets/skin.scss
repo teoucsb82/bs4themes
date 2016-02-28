@@ -2,7 +2,7 @@
   margin-bottom: 30px;
 }
 section {
-  @extend .m-b-3;
+  @extend .m-b-2;
 }
 article {
   @extend .m-y-1;
@@ -38,7 +38,9 @@ article {
 
 #buttons,
 #dialogs-popovers,
-#dialogs-tooltips {
+#dialogs-tooltips,
+#previews,
+.jumbotron {
   .btn-group .btn { margin-right: 0; }
   .btn { 
     margin-right: 0.5rem;
@@ -70,13 +72,13 @@ article {
 
 
 .navbar .nav-btn-group {
+  margin-left: $spacer-x / 2;
   padding: 0;
   &:hover,
   &:focus {
     background: transparent !important;
   }
   .btn-group {
-    margin-left: $spacer-x / 2;
     .btn {
       padding-top:    .425rem;
       padding-bottom: .425rem;

@@ -1,0 +1,24 @@
+nav.navbar.navbar-dark.bg-primary
+  a.navbar-brand href="#" Brand
+  button.navbar-toggler.hidden-md-up.pull-xs-right data-target=".preview-target-#{theme}" data-toggle="collapse" type="button" ☰
+  .collapse.navbar-toggleable-sm class="preview-target-#{theme}"
+    ul.nav.navbar-nav
+      li.nav-item.active = link_to "Active", "#", class: "nav-link"
+      li.nav-item = link_to "Link", "#", class: "nav-link"
+      li.nav-item.dropdown
+        = link_to "Dropdown", "#", class: "nav-link dropdown-toggle", aria: { expanded: false, haspopup: true }, data: { toggle: "dropdown" }
+        .dropdown-menu
+          = link_to "Action", "#", class: "dropdown-item"
+          = link_to "Another action", "#", class: "dropdown-item"
+          = link_to "Something else here", "#", class: "dropdown-item"
+          .dropdown-divider
+          = link_to "Separated link", "#", class: "dropdown-item"
+.col-xs-12.text-xs-center
+  h3.m-t-3 = theme.capitalize
+  p.m-b-2 = t("themes.#{theme}.subtitle")
+  .btn-group.text-xs-center.m-b-2
+    = button_tag("Primary", class: "btn btn-sm btn-primary")
+    = button_tag("Success", class: "btn btn-sm btn-success")
+    = button_tag("Info", class: "btn btn-sm btn-info")
+    = button_tag("Warning", class: "btn btn-sm btn-warning")
+    = button_tag("Danger", class: "btn btn-sm btn-danger")

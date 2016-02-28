@@ -3,15 +3,17 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 $ ->
-  # Set navbar height
-  height = document.getElementById("buttons").offsetHeight;
-  height = height - 110;
-  ScrollPosStyler(document, window, height);
+  # Set themes side navbar affix height
+  if $("#buttons").length
+    height = $("#buttons").offsetHeight
+    height = height - 110;
+    ScrollPosStyler(document, window, height);
 
-  # Bootstrap js 
+  # Start Bootstrap js 
   $('[data-toggle="tooltip"]').tooltip()
   $('[data-toggle="popover"]').popover()
 
+  # Handle navbar toggler
   if $("header .navbar").hasClass("navbar-light bg-faded")
     $(".js-navbar-toggle[data-classes='navbar-light bg-faded']").addClass("active")
   else if $("header .navbar").hasClass("navbar-dark bg-inverse")
