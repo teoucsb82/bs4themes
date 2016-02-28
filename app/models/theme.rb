@@ -1,5 +1,6 @@
 class Theme
   def self.all
-    %w(blackboard default elena lacey leo orion slice).sort
+    all = %w(blackboard default elena lacey leo orion slice).sort
+    live = %w(default slice).sort
   end
 end

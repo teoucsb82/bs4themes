@@ -4,6 +4,6 @@ Rails.application.routes.draw do
   # resources :blogs, path: 'news'
   resources :themes
 
-  # get 'pages/resume', as: :resume
+  get "/privacy" => 'pages#privacy', as: :privacy
   # get 'pages/portfolio', as: :portfolio
 end

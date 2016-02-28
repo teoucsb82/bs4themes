@@ -5,11 +5,11 @@ section#splash.m-t-3
       | Customized skins built for 
       = link_to "Bootstrap 4", "http://v4-alpha.getbootstrap.com"
       | .
-    p
-      a.btn.btn-lg.btn-primary href="#"  Main call to action
-      a.btn.btn-lg.btn-secondary href="#"  Secondary action
+    p Get that sweet lookin SASS over here
+    / a.btn.btn-lg.btn-primary href="#"  Main call to action
+    / a.btn.btn-lg.btn-secondary href="#"  Secondary action
 
-section#previews
+section#previews.m-b-3
   .container
     .row
       - Theme.all.each do |theme|
@@ -20,6 +20,13 @@ section#previews
               = render partial: 'preview', locals: { theme: theme }
             .card-block.text-xs-center.bg-faded.m-t-1
               p.lead.p-y-1 = theme.capitalize
-              p
-                = link_to "Preview", theme_path(theme), class: "btn btn-primary btn-lg"
-                = link_to "Download", theme_path(theme), class: "btn btn-primary btn-lg"
+              = link_to "Preview", theme_path(theme), class: "btn btn-primary btn-lg"
+              .btn-group
+                button.btn.btn-lg.btn-primary type="button" Download
+                button.btn.btn-lg.btn-primary.dropdown-toggle aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" type="button" 
+                .dropdown-menu
+                  = link_to "#{theme.capitalize}.css (compiled)", "https://s3-us-west-2.amazonaws.com/bs4themes/themes/slice/slice.css", class: "dropdown-item", rel: "nofollow"
+                  = link_to "#{theme.capitalize}.zip (all files)", "https://s3-us-west-2.amazonaws.com/bs4themes/themes/slice/slice.zip", class: "dropdown-item", rel: "nofollow"
+                  .dropdown-divider
+                  = link_to "#{theme.capitalize}_skin.scss", "https://s3-us-west-2.amazonaws.com/bs4themes/themes/slice/skin.scss", class: "dropdown-item", rel: "nofollow"
+                  = link_to "#{theme.capitalize}_variables.scss", "https://s3-us-west-2.amazonaws.com/bs4themes/themes/slice/variables.scss", class: "dropdown-item", rel: "nofollow"

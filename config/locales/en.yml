@@ -23,22 +23,29 @@ en:
   themes:
     blackboard:
       subtitle: "Clear and bold"
-      lead: ""
+      seo_description: "kasdfj lkasjdf lkj aldskfj lkjasd flkjkljadfklja dslkfja klfjaf lk"
+      seo_keywords: ""
     default:
       subtitle: "Bootstrap 4 Defaults"
-      lead: "bootstrap 4 seo"
+      seo_description: "kasdfj lkasjdf lkj aldskfj lkjasd flkjkljadfklja dslkfja klfjaf lk"
+      seo_keywords: ""
     elena:
       subtitle: "Bold and daring"
-      lead: "Red and black, venom lack"
+      seo_description: "kasdfj lkasjdf lkj aldskfj lkjasd flkjkljadfklja dslkfja klfjaf lk"
+      seo_keywords: ""
     lacey:
       subtitle: "laksdjf"
-      lead: "lakdjf"
+      seo_description: "kasdfj lkasjdf lkj aldskfj lkjasd flkjkljadfklja dslkfja klfjaf lk"
+      seo_keywords: ""
     leo:
       subtitle: "ooh la la it's leo"
-      lead: "bootstrap 4 seo"
+      seo_description: "kasdfj lkasjdf lkj aldskfj lkjasd flkjkljadfklja dslkfja klfjaf lk"
+      seo_keywords: ""
     orion:
       subtitle: "ooh la la it's orion"
-      lead: "bootstrap 4 seo"
+      seo_description: "kasdfj lkasjdf lkj aldskfj lkjasd flkjkljadfklja dslkfja klfjaf lk"
+      seo_keywords: ""
     slice:
-      subtitle: "So fresh, so clean"
-      lead: "Ubuntu, orange/cool-gray/purple, rounded/shadows"
+      subtitle: "Bright, Soft, and Sugary"
+      seo_description: "Introducing the Slice theme, with bright orange and purple highlights, can be used as a landing page or reskinned for a simple blog."
+      seo_keywords: "bright, gentle, soft, rounded, orange, purple"
