@@ -5,6 +5,7 @@
 $ ->
   # Set navbar height
   height = document.getElementById("buttons").offsetHeight;
+  height = height - 110;
   ScrollPosStyler(document, window, height);
 
   # Bootstrap js 

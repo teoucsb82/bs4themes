@@ -41,6 +41,25 @@ body {
 
 
 // nav              ===========================================================
+.nav-tabs .nav-item {
+  margin-bottom: 0;
+  
+  // .nav-link.active {
+  //   @if $enable-gradients {
+  //     @include gradient-vertical(mix(white, $brand-info, 40%), $brand-info);
+  //   }
+  // }
+}
+.nav-tabs .nav-link {
+  border-bottom: none;
+}
+// .nav-pills .nav-item {
+//   .nav-link.active {
+//     @if $enable-gradients {
+//       @include gradient-vertical(mix(white, $brand-info, 40%), $brand-info);
+//     }
+//   }
+// }
 
 
 // navbar           ===========================================================
@@ -193,3 +212,15 @@ body {
 // carousel         ===========================================================
 
 
+.btn,
+.card,
+.breadcrumb,
+.pagination,
+.pager li a,
+.jumbotron,
+.alert,
+.progress,
+.nav-pills .nav-link.active,
+.list-group {
+  @include box-shadow(0 2px 2px rgba(0,0,0,.125));
+}

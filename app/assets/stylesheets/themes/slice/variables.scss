@@ -190,9 +190,9 @@ $text-muted:                  $gray-light !default;
 
 $abbr-border-color:           $brand-primary !default;
 
-$blockquote-small-color:      $brand-primary$gray-light !default;
+$blockquote-small-color:      $brand-primary !default;
 $blockquote-font-size:        ($font-size-base * 1.25) !default;
-$blockquote-border-color:     $brand-primary !default;
+$blockquote-border-color:     $brand-info !default;
 
 $hr-border-color:             $brand-primary !default;
 $hr-border-width:             $border-width !default;
@@ -226,12 +226,12 @@ $caret-width-lg:         $caret-width !default;
 //
 // Customizes the `.table` component with basic values, each used across all table variations.
 
-$table-cell-padding:            .75rem !default;
-$table-sm-cell-padding:         .3rem !default;
+$table-cell-padding:            .65rem !default;
+$table-sm-cell-padding:         .25rem !default;
 
 $table-bg:                      transparent !default;
-$table-bg-accent:               #f9f9f9 !default;
-$table-bg-hover:                mix(white, $brand-primary, 40%) !default;
+$table-bg-accent:               mix(white, $brand-info, 90%) !default;
+$table-bg-hover:                mix(white, $brand-primary, 90%) !default;
 $table-bg-active:               $table-bg-hover !default;
 
 $table-border-width:            $border-width !default;
@@ -390,13 +390,13 @@ $nav-link-hover-bg:                         $gray-lighter !default;
 $nav-disabled-link-color:                   $gray-light !default;
 $nav-disabled-link-hover-color:             $gray-light !default;
 
-$nav-tabs-border-color:                     #ddd !default;
+$nav-tabs-border-color:                     $component-active-bg !default;
 
 $nav-tabs-link-border-width:                $border-width !default;
-$nav-tabs-link-hover-border-color:          $gray-lighter !default;
+$nav-tabs-link-hover-border-color:          $brand-info !default;
 
-$nav-tabs-active-link-hover-bg:             $body-bg !default;
-$nav-tabs-active-link-hover-color:          $gray !default;
+$nav-tabs-active-link-hover-bg:             $component-active-bg !default;
+$nav-tabs-active-link-hover-color:          #fff !default;
 $nav-tabs-active-link-hover-border-color:   #ddd !default;
 
 $nav-tabs-justified-link-border-color:            #ddd !default;

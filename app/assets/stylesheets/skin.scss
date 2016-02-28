@@ -21,19 +21,16 @@ article {
 
   &.nav-pills {
     .nav-link {
-      display: block;
-      padding: $nav-link-padding;
       border-left: 3px solid transparent;
-      @include border-radius($nav-pills-border-radius);
-      font-size: $font-size-sm;
       color: $text-muted;
-    
+      background: initial !important;
       &.active,
       &.focus,
       &:hover, {
         border-left: 3px solid $brand-primary;
         color: $brand-primary;
-        background-color: initial;
+        background: initial !important;
+        @include box-shadow(none);
       }
     }
   }
@@ -92,4 +89,8 @@ article {
   outline: none;
   $shadow: $input-box-shadow, 0 0 8px $input-box-shadow-focus;
   @include box-shadow($shadow);
+}
+
+.radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
+  margin-right: 0.25rem;
 }
