@@ -45,3 +45,7 @@ en:
       subtitle: "Legible, yet elegant"
       seo_description: "Crisp and readable with three distinct tones, Lacey is perfect for a product or landing page."
       seo_keywords: "bootstrap, theme, print, readable, legible, clean, crisp, clear"
+    glowworm:
+      subtitle: "Modern and vibrant"
+      seo_description: "Green theme with glowing highlights. Dark navbar mode is perfect for landing pages."
+      seo_keywords: "bootstrap, glow, sass, styling, responsive, theme, skin"

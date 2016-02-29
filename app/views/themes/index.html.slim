@@ -52,8 +52,8 @@ section#previews.m-b-3
               | #{theme.capitalize}
               span.pull-xs-right
                 .btn-group
-                  button.btn.btn-sm.btn-info type="button" = content_tag(:i, nil, class: "fa fa-download") + " Download"
-                  button.btn.btn-sm.btn-info.dropdown-toggle aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" type="button" 
+                  button.btn.btn-sm.btn-primary type="button" = content_tag(:i, nil, class: "fa fa-download") + " Download"
+                  button.btn.btn-sm.btn-primary.dropdown-toggle aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" type="button" 
                   .dropdown-menu
                     = render partial: "download_links", locals: { theme: theme }
             .card-block
@@ -75,4 +75,4 @@ section#previews.m-b-3
 
             .card-footer.card-primary.bg-inverse
               .text-xs-center
-                = link_to content_tag(:i, nil, class: "fa fa-eye") + " Preview #{theme.capitalize}", theme_path(theme), class: "btn btn-info btn-lg"
+                = link_to content_tag(:i, nil, class: "fa fa-eye") + " Preview #{theme.capitalize}", theme_path(theme), class: "btn btn-primary btn-lg"
