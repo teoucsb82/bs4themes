@@ -4,12 +4,13 @@
       .card.card-block.card-primary.card-inverse
         blockquote.card-blockquote
           h1.display-1 = params[:id].capitalize
-      .card.card-block.card-info-outline
+      .card.card-block
         blockquote.blockquote-reverse
-          h3.card-title = t("themes.#{params[:id]}.subtitle")
-          = link_to content_tag(:i, nil, class: "fa fa-cloud-download") + " Download #{params[:id].capitalize}.css", "https://s3-us-west-2.amazonaws.com/bs4themes/themes/slice/slice.css", class: "btn btn-primary btn-lg", rel: "nofollow"
-          | &nbsp;
-          = link_to content_tag(:i, nil, class: "fa fa-file-archive-o") + " Download #{params[:id].capitalize}.zip", "https://s3-us-west-2.amazonaws.com/bs4themes/themes/slice/slice.zip", class: "btn btn-primary btn-lg", rel: "nofollow"
+          h3.card-title = t("themes.#{@name}.subtitle")
+          - unless @name == "default"
+            = link_to content_tag(:i, nil, class: "fa fa-cloud-download") + " #{@name.capitalize}.css (compiled)", "https://s3-us-west-2.amazonaws.com/bs4themes/themes/#{@name}/#{@name}.css", class: "btn btn-primary btn-lg", rel: "nofollow"
+            | &nbsp;
+            = link_to content_tag(:i, nil, class: "fa fa-file-archive-o") + " #{@name.capitalize}.zip (all files)", "https://s3-us-west-2.amazonaws.com/bs4themes/themes/#{@name}/#{@name}.zip", class: "btn btn-primary btn-lg", rel: "nofollow"
 
   .row
     .col-sm-2.hidden-md-down

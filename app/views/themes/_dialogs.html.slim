@@ -1,46 +1,45 @@
 section#dialogs
   h2.section-title Dialogs
-  .row
-    .col-lg-8
-      article#dialogs-modal
-        h3 
-          | Modal 
-          button.btn.btn-primary-outline.btn-sm type="button" data-toggle="modal" data-target="#myModal" Launch live demo
-        #myModal.modal.fade aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" 
-          .modal-dialog role="document" 
-            .modal-content
-              .modal-header
-                button.close aria-label="Close" data-dismiss="modal" type="button" 
-                  span aria-hidden="true"  ×
-                h4.modal-title Modal title
-              .modal-body
-                p One fine body…
-              .modal-footer
-                button.btn.btn-secondary data-dismiss="modal" type="button"  Close
-                button.btn.btn-primary type="button"  Save changes
+  article#dialogs-modal
+    h3 
+      | Modal 
+      button.btn.btn-primary-outline.btn-sm type="button" data-toggle="modal" data-target="#myModal" Launch live demo
+    #myModal.modal.fade aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" 
+      .modal-dialog role="document" 
+        .modal-content
+          .modal-header
+            button.close aria-label="Close" data-dismiss="modal" type="button" 
+              span aria-hidden="true"  ×
+            h4.modal-title Modal title
+          .modal-body
+            p One fine body…
+          .modal-footer
+            button.btn.btn-secondary data-dismiss="modal" type="button"  Close
+            button.btn.btn-primary type="button"  Save changes
 
-        .modal-example
-          .modal
-            .modal-dialog role="document" 
-              .modal-content
-                .modal-header
-                  button.close aria-label="Close" data-dismiss="modal" type="button" 
-                    span aria-hidden="true"  ×
-                  h4.modal-title Modal title
-                .modal-body
-                  p One fine body…
-                .modal-footer
-                  button.btn.btn-secondary data-dismiss="modal" type="button"  Close
-                  button.btn.btn-primary type="button"  Save changes
-    .col-lg-4
+    .modal-example
+      .modal
+        .modal-dialog role="document" 
+          .modal-content
+            .modal-header
+              button.close aria-label="Close" data-dismiss="modal" type="button" 
+                span aria-hidden="true"  ×
+              h4.modal-title Modal title
+            .modal-body
+              p One fine body…
+            .modal-footer
+              button.btn.btn-secondary data-dismiss="modal" type="button"  Close
+              button.btn.btn-primary type="button"  Save changes
+  .row
+    .col-sm-6
       article#dialogs-popovers
         h3 Popovers
         p 
-          button.btn.btn-default.btn-sm data-container="body" data-content=("Vivamus sagittis lacus vel augue laoreet rutrum faucibus.") data-original-title="" data-placement="left" data-toggle="popover" title="" type="button"  Left
-          button.btn.btn-default.btn-sm data-container="body" data-content=("Vivamus sagittis lacus vel augue laoreet rutrum faucibus.") data-original-title="" data-placement="top" data-toggle="popover" title="" type="button"  Top
-          button.btn.btn-default.btn-sm data-container="body" data-content=("Vivamus\nsagittis lacus vel augue laoreet rutrum faucibus.") data-original-title="" data-placement="bottom" data-toggle="popover" title="" type="button"  Bottom
-          button.btn.btn-default.btn-sm data-container="body" data-content=("Vivamus sagittis lacus vel augue laoreet rutrum faucibus.") data-original-title="" data-placement="right" data-toggle="popover" title="" type="button"  Right
-
+          button.btn.btn-default.btn-sm data-container="body" data-content="Don't judge me. Food." data-original-title="Bawk Bawk" data-placement="left" data-toggle="popover" title="" type="button"  Left
+          button.btn.btn-default.btn-sm data-container="body" data-content="I will hire Kenny Loggins to come here and play an acoustic set." data-original-title="Danger Zone" data-placement="top" data-toggle="popover" title="" type="button"  Top
+          button.btn.btn-default.btn-sm data-container="body" data-content="Oh Barry, I am coming for you." data-original-title="Phrasing" data-placement="bottom" data-toggle="popover" title="" type="button"  Bottom
+          button.btn.btn-default.btn-sm data-container="body" data-content="Hah. Elaborate voicemail prank. You know what to do, stupid." data-original-title="Leave it" data-placement="right" data-toggle="popover" title="" type="button"  Right
+    .col-sm-6
       article#dialogs-tooltips
         h3 Tooltips
         p

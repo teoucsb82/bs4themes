@@ -51,6 +51,11 @@ article {
   .form-inline {
     .form-control {
       margin-right: $spacer-x / 2;
+      border-bottom: none;
+    }
+    .form-control,
+    button { 
+      line-height: $spacer; 
     }
   }
 }
@@ -80,8 +85,6 @@ article {
   }
   .btn-group {
     .btn {
-      padding-top:    .425rem;
-      padding-bottom: .425rem;
       margin-bottom: 0;
     }
   }
@@ -96,4 +99,8 @@ article {
 
 .radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
   margin-right: 0.25rem;
+}
+
+.js-navbar-toggle {
+  font-size: inherit;
 }

@@ -25,8 +25,4 @@ section#previews.m-b-3
                 button.btn.btn-lg.btn-primary type="button" Download
                 button.btn.btn-lg.btn-primary.dropdown-toggle aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" type="button" 
                 .dropdown-menu
-                  = link_to "#{theme.capitalize}.css (compiled)", "https://s3-us-west-2.amazonaws.com/bs4themes/themes/slice/slice.css", class: "dropdown-item", rel: "nofollow"
-                  = link_to "#{theme.capitalize}.zip (all files)", "https://s3-us-west-2.amazonaws.com/bs4themes/themes/slice/slice.zip", class: "dropdown-item", rel: "nofollow"
-                  .dropdown-divider
-                  = link_to "#{theme.capitalize}_skin.scss", "https://s3-us-west-2.amazonaws.com/bs4themes/themes/slice/skin.scss", class: "dropdown-item", rel: "nofollow"
-                  = link_to "#{theme.capitalize}_variables.scss", "https://s3-us-west-2.amazonaws.com/bs4themes/themes/slice/variables.scss", class: "dropdown-item", rel: "nofollow"
+                  = render partial: "download_links", locals: { theme: theme }

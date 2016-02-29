@@ -26,17 +26,9 @@ en:
       seo_description: "kasdfj lkasjdf lkj aldskfj lkjasd flkjkljadfklja dslkfja klfjaf lk"
       seo_keywords: ""
     default:
-      subtitle: "Bootstrap 4 Defaults"
-      seo_description: "kasdfj lkasjdf lkj aldskfj lkjasd flkjkljadfklja dslkfja klfjaf lk"
-      seo_keywords: ""
-    elena:
-      subtitle: "Bold and daring"
-      seo_description: "kasdfj lkasjdf lkj aldskfj lkjasd flkjkljadfklja dslkfja klfjaf lk"
-      seo_keywords: ""
-    lacey:
-      subtitle: "laksdjf"
-      seo_description: "kasdfj lkasjdf lkj aldskfj lkjasd flkjkljadfklja dslkfja klfjaf lk"
-      seo_keywords: ""
+      subtitle: "Bootstrap 4 Default CSS Demo"
+      seo_description: "Default Bootstrap 4 CSS settings in display. Modals and popovers are enabled at bottom"
+      seo_keywords: "bootstrap, css, skins, templates, defaults, 4, popovers, modals, bleeding edge"
     leo:
       subtitle: "ooh la la it's leo"
       seo_description: "kasdfj lkasjdf lkj aldskfj lkjasd flkjkljadfklja dslkfja klfjaf lk"
@@ -49,3 +41,7 @@ en:
       subtitle: "Bright, Soft, and Sugary"
       seo_description: "Introducing the Slice theme, with bright orange and purple highlights, can be used as a landing page or reskinned for a simple blog."
       seo_keywords: "bright, gentle, soft, rounded, orange, purple"
+    v1:
+      subtitle: "Legible, yet elegant"
+      seo_description: "Crisp and readable with three distinct tones, v1 is perfect for a product or landing page."
+      seo_keywords: "bootstrap, theme, print, readable, legible, clean, crisp, clear"
