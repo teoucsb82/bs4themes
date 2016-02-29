@@ -3,11 +3,9 @@ section#splash.m-t-3
     h1.jumbotron-heading Bootstrap 4 Themes
     p.lead.text-muted 
       | Customized skins built for 
-      = link_to "Bootstrap 4", "http://v4-alpha.getbootstrap.com"
+      = link_to "Bootstrap 4", "http://v4-alpha.getbootstrap.com", target: "_blank"
       | .
     p Get that sweet lookin SASS over here
-    / a.btn.btn-lg.btn-primary href="#"  Main call to action
-    / a.btn.btn-lg.btn-secondary href="#"  Secondary action
 
 section#previews.m-b-3
   .container
@@ -16,13 +14,31 @@ section#previews.m-b-3
         - next if theme == "default"
         .col-sm-4
           .card
-            .preview-theme class="preview-theme-#{theme}"
-              = render partial: 'preview', locals: { theme: theme }
-            .card-block.text-xs-center.bg-faded.m-t-1
-              p.lead.p-y-1 = theme.capitalize
-              = link_to "Preview", theme_path(theme), class: "btn btn-primary btn-lg"
-              .btn-group
-                button.btn.btn-lg.btn-primary type="button" Download
-                button.btn.btn-lg.btn-primary.dropdown-toggle aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" type="button" 
-                .dropdown-menu
-                  = render partial: "download_links", locals: { theme: theme }
+            h2.card-header.bg-inverse 
+              | #{theme.capitalize}
+              span.pull-xs-right
+                .btn-group
+                  button.btn.btn-sm.btn-info type="button" = content_tag(:i, nil, class: "fa fa-download") + " Download"
+                  button.btn.btn-sm.btn-info.dropdown-toggle aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" type="button" 
+                  .dropdown-menu
+                    = render partial: "download_links", locals: { theme: theme }
+            .card-block
+              ul.nav.nav-tabs role="tablist" 
+                li.nav-item 
+                  = link_to "Light", "##{theme}-light", class: "nav-link", data: { toggle: "tab" }, role: "tab"
+                li.nav-item 
+                  = link_to "Primary", "##{theme}-primary", class: "nav-link active", data: { toggle: "tab" }, role: "tab"
+                li.nav-item 
+                  = link_to "Dark", "##{theme}-dark", class: "nav-link", data: { toggle: "tab" }, role: "tab"
+            .card-block
+              .tab-content
+                .tab-pane.fade.in id="#{theme}-light" role="tabpanel" 
+                  img.card-img-top.img-fluid src="http://res.cloudinary.com/viadeca/image/upload/c_scale,q_80,w_420,h_220/bs4themes/#{theme}/#{theme}_light.png" alt="#{theme.capitalize}"
+                .tab-pane.fade.in.active id="#{theme}-primary" role="tabpanel" 
+                  img.card-img-top.img-fluid src="http://res.cloudinary.com/viadeca/image/upload/c_scale,q_80,w_420,h_220/bs4themes/#{theme}/#{theme}_primary.png" alt="#{theme.capitalize}"
+                .tab-pane.fade.in id="#{theme}-dark" role="tabpanel" 
+                  img.card-img-top.img-fluid src="http://res.cloudinary.com/viadeca/image/upload/c_scale,q_80,w_420,h_220/bs4themes/#{theme}/#{theme}_dark.png" alt="#{theme.capitalize}"
+
+            .card-footer.card-primary.bg-inverse
+              .text-xs-center
+                = link_to content_tag(:i, nil, class: "fa fa-eye") + " Preview #{theme.capitalize}", theme_path(theme), class: "btn btn-info btn-lg"

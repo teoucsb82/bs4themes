@@ -1,6 +1,9 @@
-.jumbotron {
-  margin-bottom: 30px;
+#splash {
+  .jumbotron {
+    @include border-radius(0);
+  }
 }
+
 section {
   @extend .m-b-2;
 }
@@ -103,4 +106,14 @@ article {
 
 .js-navbar-toggle {
   font-size: inherit;
+}
+
+#previews {
+  .card-header:first-child,
+  .card-footer:last-child {
+    @include border-radius(0);
+  }
+  .card-footer {
+    border-top: $border-width solid $brand-info;
+  }
 }
