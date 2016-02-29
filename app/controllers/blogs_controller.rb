@@ -15,7 +15,7 @@ class BlogsController < ApplicationController
   # GET /blogs/1
   # GET /blogs/1.json
   def show
-    set_meta_tags title: blog.title.humanize
+    set_meta_tags title: @blog.title.humanize
   end
 
   # GET /blogs/new
