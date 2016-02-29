@@ -1,7 +1,4 @@
 .container.m-t-3.p-y-2
-  .card
-    = render 'layouts/ads'
-.container
   .card-deck-wrapper.m-b-1
     .card-deck
       .card.card-block.card-primary.card-inverse
@@ -14,6 +11,9 @@
             = link_to content_tag(:i, nil, class: "fa fa-cloud-download") + " #{@name.capitalize}.css (compiled)", "https://s3-us-west-2.amazonaws.com/bs4themes/themes/#{@name}/#{@name}.css", class: "btn btn-primary btn", rel: "nofollow"
             | &nbsp;
             = link_to content_tag(:i, nil, class: "fa fa-file-archive-o") + " #{@name.capitalize}.zip (all files)", "https://s3-us-west-2.amazonaws.com/bs4themes/themes/#{@name}/#{@name}.zip", class: "btn btn-primary btn", rel: "nofollow"
+.container
+  .card
+    = render 'layouts/ads'
 
   .row
     .col-sm-2.hidden-md-down
