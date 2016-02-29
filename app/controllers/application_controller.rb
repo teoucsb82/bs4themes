@@ -7,6 +7,6 @@ class ApplicationController < ActionController::Base
 
   private
   def set_seo_globals
-    set_meta_tags canonical: "http://www.bs4themes.com"
+    set_meta_tags site: 'Bootstrap 4 Themes', reverse: true, canonical: "http://www.bs4themes.com"
   end
 end

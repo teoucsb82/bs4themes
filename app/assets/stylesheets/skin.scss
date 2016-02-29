@@ -1,5 +1,6 @@
 #splash {
   .jumbotron {
+    padding-top: 8rem;
     @include border-radius(0);
   }
 }
@@ -115,5 +116,14 @@ article {
   }
   .card-footer {
     border-top: $border-width solid $brand-info;
+  }
+}
+
+.navbar-light.navbar-transparent {
+  @include transition(all 0.5s ease);
+
+  &.transparent {
+    background: transparent !important;
+    border: none;
   }
 }

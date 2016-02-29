@@ -1,11 +1,15 @@
 class PagesController < ApplicationController
-  def portfolio 
+  def help
+    @navbar_classes = "navbar-dark bg-inverse"
+    set_meta_tags title: "Help", 
+                  description: 'Quickstart instructions for downloading and installing custom Bootstrap 4 SASS themes.',
+                  keywords: 'bootstrap, quickstart, help, sass, installation, themes, skin, rails, ruby, asset pipeline'
   end
 
-  def resume 
+  def about 
   end
 
   def privacy
-    set_meta_tags site: 'Bootstrap 4 Themes', title: "Privacy & Terms of Service", reverse: true
+    set_meta_tags title: "Privacy and Terms of Service", reverse: true
   end
 end

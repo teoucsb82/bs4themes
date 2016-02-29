@@ -21,9 +21,9 @@ SitemapGenerator::Sitemap.create do
   #
   # Add all articles:
   #
-  Theme.all.each do |theme|
-    add theme_path(theme)
-  end
+  add theme_path("default")
+  add theme_path("lacey")
+  add theme_path("slice")
 
   add '/privacy'
 end

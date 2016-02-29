@@ -1,0 +1,66 @@
+.container.m-t-3.p-t-2
+  section#help
+    .jumbotron
+      h1 Help
+      p.lead Quickstart instructions for easy theme installation and configuration.
+  section#quickstart
+    article#download
+      h2.section-title Download & Install
+      p Once you've decided on a theme (or themes!), start the download process by clicking "Download" from the navbar of that page.
+      p There are four primary file downloads available:
+      .card-group
+        .card
+          h3.text-xs-center.card-header 1. Compiled .css
+          .card-block
+            h5: span.label.label-success Beginner
+            p.card-text 
+              | The 
+              code compiled.css
+              |  file contains everything in one spot -- unminified -- for you to drop directly into an existing or new page. 
+          .card-block
+            .p.card-text To Install
+            p
+              | Copy/paste the contents of this file directly between
+              code = "<style></style>"
+              |  tags (just before 
+              code = "</head>" 
+              | ) and you're done.
+
+        .card
+          h3.text-xs-center.card-header 2. All files.zip
+          .card-block
+            h5
+              span.label.label-warning Intermediate
+              span.label.label-danger Advanced
+            p.card-text 
+              | The zip file includes the 
+              = link_to "Bootstrap 4 core files", "http://v4-alpha.getbootstrap.com/", target: "_blank"
+              | , the unminified 
+              code theme.css
+              |  , plus
+              code skin.scss
+              | , 
+              code variables.scss
+              |  and 
+              code manifest.scss
+              | . Useful if you want to drop into a framework like Ruby on Rails.
+          .card-block
+            .p.card-text To Install
+            p
+              | Pick and choose the files from the zip you need for your application. Rails users can add the
+              code manifest.scss
+              |  along with the bootstrap/theme files to quickstart an app.
+
+        .card
+          h3.text-xs-center.card-header 3. _variables.scss
+          .card-block
+            h5: span.label.label-danger Advanced
+            p.card-text 
+              | Overrides for Bootstrap 4 variables. Includes theme-specific SASS variables. Replace the default 
+              code bootstrap-4/variables.css
+              |  in your assets with this file. 
+        .card
+          h3.text-xs-center.card-header 4. _skin.scss
+          .card-block
+            h5: span.label.label-danger Advanced
+            p.card-text Overrides for Bootstrap 4 styling. Includes theme-specific SASS styling, must be imported AFTER Bootstrap 4 mixins/styling.

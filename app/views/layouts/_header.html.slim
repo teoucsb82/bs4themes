@@ -1,5 +1,5 @@
 header
-  nav.navbar.navbar-fixed-top class=@navbar_classes
+  nav.navbar.navbar-fixed-top class="#{@navbar_classes.blank? ? 'navbar-light bg-faded' : @navbar_classes}"
     .container
       = link_to content_tag(:i, nil, class: 'fa fa-home') + " BS4", root_url, class: "navbar-brand"
       ul.nav.navbar-nav
@@ -11,8 +11,7 @@ header
             - Theme.all.each do |theme|
               - next if theme == "default"
               = link_to theme.capitalize, theme_path(theme), class: "dropdown-item"
-        li.nav-item = link_to "Help", "#", class: "nav-link"
-        li.nav-item = link_to "About", "#", class: "nav-link"
+        li.nav-item = link_to "Help", help_path, class: "nav-link"
         - if @name && @name != "default"
           li.nav-item.dropdown
             = link_to content_tag(:i, nil, class: "fa fa-download") + " Download #{@name.capitalize}", "#download", class: "nav-link", aria: { expanded: false, haspopup: true }, data: { toggle: "dropdown" }
