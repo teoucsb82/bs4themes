@@ -1,12 +1,15 @@
-p#notice = notice
-
-p
-  strong Title:
-  = @blog.title
-p
-  strong Body:
-  = @blog.body
-
-= link_to 'Edit', edit_blog_path(@blog)
-'|
-= link_to 'Back', blogs_path
+.clearfix.m-y-3
+section#blog-post
+  .container
+    .row
+      .col-sm-12
+        ol.breadcrumb
+          li = link_to "Blog", blogs_path
+          li.active = @blog.title.humanize
+    .row
+      .col-sm-8.blog-main
+        h1.display-3 = @blog.title
+        p.lead = @blog.created_at.strftime('%b %d, %Y')
+        = @blog.body.html_safe
+      #ad-content.col-sm-3.col-sm-offset-1
+        = render 'sidebar'

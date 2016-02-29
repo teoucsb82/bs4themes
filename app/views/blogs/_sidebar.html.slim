@@ -1,0 +1,9 @@
+.sidebar-module
+  h4 Archives
+  ol.list-unstyled
+    - if @blogs
+      - (Date.today.year..@blogs.first.created_at.year).to_a.each do |year|
+        - @blogs.where(:created_at => year).first
+        li = link_to "month #{year}", root_url
+.sidebar-module.sps
+  = render 'layouts/ads'

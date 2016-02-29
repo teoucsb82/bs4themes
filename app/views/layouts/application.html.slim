@@ -2,7 +2,7 @@ doctype html
 html
   head
     = display_meta_tags
-    - if action_name == "show"
+    - if action_name == "show" && controller_name == "themes"
       = stylesheet_link_tag "themes/#{params[:id]}/manifest", media: 'all'
     - else
       = stylesheet_link_tag 'application', media: 'all'
@@ -13,4 +13,5 @@ html
     = yield
     = render 'layouts/footer'
     = render 'layouts/ga' if Rails.env.production?
+    = javascript_include_tag "//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
     = javascript_include_tag 'application', async: Rails.env.production?

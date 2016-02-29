@@ -20,7 +20,12 @@ article {
   margin-bottom: 1rem;
   border-bottom: 1px dotted $gray-lighter;
 }
-
+#ad-content {
+  .sps--blw {
+    position: fixed;
+    top: 75px;
+  }
+}
 #sidebar {
   &.sps--blw {
     position: fixed;

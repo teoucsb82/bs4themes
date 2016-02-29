@@ -1,15 +1,25 @@
-= simple_form_for @blog, class: "form-horizontal" do |f|
-  - if @blog.errors.any?
-    #error_explanation
-      h2 = "#{pluralize(@blog.errors.count, "error")} prohibited this blog from being saved:"
-      ul
-        - @blog.errors.full_messages.each do |message|
-          li = message
-
-  .field
-    = f.label :title
-    = f.text_field :title
-  .field
-    = f.label :body
-    = f.text_area :body
-  .actions = f.submit
+.clearfix.m-y-3
+.container
+  section#help
+    article#new-blog
+      h2 New blog post
+      .card.card-block.bg-faded
+        = simple_form_for @blog, class: "form-horizontal" do |f|
+          - if @blog.errors.any?
+            #error_explanation
+              h2 = "#{pluralize(@blog.errors.count, "error")} prohibited this blog from being saved:"
+              ul
+                - @blog.errors.full_messages.each do |message|
+                  li = message
+          .form-group.row
+            = f.label :title, class: "col-sm-2 form-control-label"
+            .col-sm-10
+              = f.text_field :title, placeholder: "Blog title", class: "form-control form-control-lg"
+          .form-group.row
+            = f.label :body, class: "col-sm-2 form-control-label"
+            .col-sm-10
+              = f.text_area :body, placeholder: "Blog body", class: "form-control", rows: "8"
+          .form-group.row
+            .col-sm-offset-2.col-sm-10
+              = link_to content_tag(:i, nil, class: "fa fa-arrow-left") + ' Back', blogs_path, class: "btn btn-warning-outline btn-lg"
+              = f.submit "Post", class: "btn btn-success btn-lg pull-xs-right"

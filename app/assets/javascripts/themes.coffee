@@ -8,6 +8,10 @@ $ ->
     height = document.getElementById("navbar").offsetHeight
     height = height - 110;
     ScrollPosStyler(document, window, height);
+  if $("#blogs").length
+    height = $("h1").get(0).offsetHeight
+    height = height + 250;
+    ScrollPosStyler(document, window, height);
 
   # Start Bootstrap js 
   $('[data-toggle="tooltip"]').tooltip()
@@ -31,3 +35,5 @@ $ ->
     else
       $("footer.footer").removeClass("visible")
     return
+
+  (adsbygoogle = window.adsbygoogle || []).push({});

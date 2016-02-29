@@ -14,5 +14,6 @@
 //= require jquery_ujs
 //= require tether/tether
 //= require bootstrap-4/bootstrap
+//= require trumbowyg/trumbowyg
 //= require scrollPosStyler
 //= require_tree .

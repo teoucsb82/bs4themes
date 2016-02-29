@@ -48,7 +48,11 @@
 @import "bootstrap-4/utilities-background";
 @import "bootstrap-4/utilities-spacing";
 @import "bootstrap-4/utilities-responsive";
-@import "themes/glowworm/skin";
-@import "font-awesome";
 
+// other vendor
+@import "font-awesome";
+@import "trumbowyg/trumbowyg";
+
+
+@import "themes/glowworm/skin";
 @import "skin";
