@@ -1,10 +1,14 @@
 class BlogsController < ApplicationController
   before_filter :authenticate_user!, except: [:index, :show]
   before_action :set_blog, only: [:show, :edit, :update, :destroy]
+  before_filter :set_navbar_class
 
   # GET /blogs
   # GET /blogs.json
   def index
+    set_meta_tags title: "Blog", 
+                  description: "Get the latest Bootstrap 4 news, insights and helpful tips here.", 
+                  keywords: "bootstrap, blog, tips, best practices, news, templates, updates, alpha"
     @blogs = Blog.all.order(created_at: :desc)
   end
 
@@ -71,5 +75,9 @@ class BlogsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def blog_params
       params.require(:blog).permit(:title, :body)
+    end
+
+    def set_navbar_class
+      @navbar_classes = "navbar-dark bg-inverse"
     end
 end

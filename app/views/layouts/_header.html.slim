@@ -14,6 +14,7 @@ header
                 - next if theme == "default"
                 = link_to theme.capitalize, theme_path(theme), class: "dropdown-item"
           li.nav-item = link_to "Help", help_path, class: "nav-link"
+          li.nav-item = link_to "Blog", blogs_path, class: "nav-link"
           - if @name && @name != "default"
             li.nav-item.dropdown
               = link_to content_tag(:i, nil, class: "fa fa-download") + " Download #{@name.capitalize}", "#download", class: "nav-link", aria: { expanded: false, haspopup: true }, data: { toggle: "dropdown" }
