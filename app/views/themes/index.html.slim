@@ -1,11 +1,45 @@
 section#splash
-  .jumbotron.text-xs-center
+  .jumbotron.text-xs-center.m-b-0
     h1.jumbotron-heading Bootstrap 4 Themes
     p.lead.text-muted 
       | Customized skins built for 
       = link_to "Bootstrap 4", "http://v4-alpha.getbootstrap.com", target: "_blank"
       | .
     p Get that sweet lookin SASS over here
+section#value
+  .container
+    .row
+      .col-sm-6
+        h3
+          i.fa.fa-puzzle-piece
+          | Simple installation
+        p 
+          | Various 
+          = link_to "download packages", help_path
+          |  mean setup can be as simple as copy/paste, or as advanced as tuning individual variables. The choice is yours!
+      .col-sm-6
+        h3
+          i.fa.fa-github
+          | Open Source
+        p
+          | Built with open source components and released under the 
+          = link_to "MIT License", "https://opensource.org/licenses/MIT", target: "_blank", rel: "nofollow"
+          |  so you're free to re-use however you'd like.
+    .row
+      .col-sm-6
+        h3
+          i.fa.fa-flash
+          | The future is here
+        p
+          | Designed with the 
+          = link_to "latest v4 Alpha", "http://v4-alpha.getbootstrap.com", target: "_blank"
+          | , including upgrades to cards, a redesigned responsive grid system and enhanced tooltips with 
+          = link_to "Tether.js", "http://github.hubspot.com/tether/", target: "_blank"
+      .col-sm-6
+        h3
+          i.fa.fa-terminal
+          | Variables FTW
+        p Modifying a theme is as easy as changing a variable. Update shadows, rounded edges, colors and responsive breakpoints with ease.
 
 section#previews.m-b-3
   .container
