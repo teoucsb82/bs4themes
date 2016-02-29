@@ -1,5 +1,14 @@
-footer
-  p 
-    | © 
-    = mail_to "teo@dellamico.com", "Teo Dell'Amico", :encode => "javascript"
-    |  #{Date.today.year}
+footer.footer.navbar-dark.bg-inverse
+  .container
+    ul.nav.navbar-nav
+      li.nav-item = link_to "MIT License", "https://opensource.org/licenses/MIT", target: "_blank", rel: "nofollow"
+      li.nav-item = link_to "Bootstrap", "http://getbootstrap.com", target: "_blank", rel: "nofollow"
+      li.nav-item = link_to "Font Awesome Icons", "http://fortawesome.github.io/Font-Awesome/", target: "_blank", rel: "nofollow"
+      li.nav-item = link_to "Google Fonts", "http://www.google.com/webfonts", target: "_blank", rel: "nofollow"
+    ul.nav.navbar-nav.pull-xs-right
+      li.nav-item
+        | © #{Date.today.year} 
+        = link_to "http://www.bs4themes.com", "www.bs4themes.com"
+        |  by 
+        = mail_to "teo@dellamico.com", "Teo", encode: "javascript"
+        | . All rights reserved.

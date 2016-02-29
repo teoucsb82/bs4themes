@@ -26,4 +26,5 @@ SitemapGenerator::Sitemap.create do
   add theme_path("slice")
 
   add '/privacy'
+  add '/help'
 end

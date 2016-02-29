@@ -25,10 +25,9 @@ $ ->
     $("header .navbar").removeClass("navbar-light navbar-dark bg-primary bg-inverse bg-faded")
     $("header .navbar").addClass($(this).data("classes"))
 
-  window.addEventListener 'scroll', (->
-    if window.scrollY > 10
-      $('header .navbar-transparent').removeClass("transparent")
+  window.onscroll = (ev) ->
+    if window.innerHeight + window.scrollY >= document.body.offsetHeight
+      $("footer.footer").addClass("visible")
     else
-      $('header .navbar-transparent').addClass("transparent")
+      $("footer.footer").removeClass("visible")
     return
-  ), false
