@@ -2,6 +2,7 @@
   .jumbotron {
     padding-top: 8rem;
     @include border-radius(0);
+    @include gradient-directional(rgba(0,0,0,.0001), rgba(0,0,0,.5), -45deg);
   }
 }
 
