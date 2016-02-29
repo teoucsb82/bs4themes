@@ -6,8 +6,9 @@ section#splash
       = link_to "Bootstrap 4", "http://v4-alpha.getbootstrap.com", target: "_blank"
       | .
     p Get that sweet lookin SASS over here
+
 section#value
-  .container
+  .container.m-t-3
     .row
       .col-sm-6
         h3
@@ -40,6 +41,10 @@ section#value
           i.fa.fa-terminal
           | Variables FTW
         p Modifying a theme is as easy as changing a variable. Update shadows, rounded edges, colors and responsive breakpoints with ease.
+section#ads
+  .container
+    .card
+      = render 'layouts/ads'
 
 section#previews.m-b-3
   .container
