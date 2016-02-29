@@ -8,9 +8,9 @@
         blockquote.blockquote-reverse
           h3.card-title = t("themes.#{@name}.subtitle")
           - unless @name == "default"
-            = link_to content_tag(:i, nil, class: "fa fa-cloud-download") + " #{@name.capitalize}.css (compiled)", "https://s3-us-west-2.amazonaws.com/bs4themes/themes/#{@name}/#{@name}.css", class: "btn btn-primary btn-lg", rel: "nofollow"
+            = link_to content_tag(:i, nil, class: "fa fa-cloud-download") + " #{@name.capitalize}.css (compiled)", "https://s3-us-west-2.amazonaws.com/bs4themes/themes/#{@name}/#{@name}.css", class: "btn btn-primary btn", rel: "nofollow"
             | &nbsp;
-            = link_to content_tag(:i, nil, class: "fa fa-file-archive-o") + " #{@name.capitalize}.zip (all files)", "https://s3-us-west-2.amazonaws.com/bs4themes/themes/#{@name}/#{@name}.zip", class: "btn btn-primary btn-lg", rel: "nofollow"
+            = link_to content_tag(:i, nil, class: "fa fa-file-archive-o") + " #{@name.capitalize}.zip (all files)", "https://s3-us-west-2.amazonaws.com/bs4themes/themes/#{@name}/#{@name}.zip", class: "btn btn-primary btn", rel: "nofollow"
 
   .row
     .col-sm-2.hidden-md-down
