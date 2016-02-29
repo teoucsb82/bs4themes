@@ -2,28 +2,30 @@ header
   nav.navbar.navbar-fixed-top class="#{@navbar_classes.blank? ? 'navbar-light bg-faded' : @navbar_classes}"
     .container
       = link_to content_tag(:i, nil, class: 'fa fa-home') + " BS4", root_url, class: "navbar-brand"
-      ul.nav.navbar-nav
-        li.nav-item.dropdown
-          = link_to "All Themes", "#all-themes", class: "nav-link dropdown-toggle", aria: { expanded: false, haspopup: true }, data: { toggle: "dropdown" }
-          .dropdown-menu aria-labelledby="Preview" 
-            = link_to "Default", theme_path("default"), class: "dropdown-item"
-            .dropdown-divider
-            - Theme.all.each do |theme|
-              - next if theme == "default"
-              = link_to theme.capitalize, theme_path(theme), class: "dropdown-item"
-        li.nav-item = link_to "Help", help_path, class: "nav-link"
-        - if @name && @name != "default"
+      button.navbar-toggler.hidden-md-up.pull-xs-right data-target="#main-navbar" data-toggle="collapse" type="button" ☰
+      #main-navbar.collapse.navbar-toggleable-sm
+        ul.nav.navbar-nav
           li.nav-item.dropdown
-            = link_to content_tag(:i, nil, class: "fa fa-download") + " Download #{@name.capitalize}", "#download", class: "nav-link", aria: { expanded: false, haspopup: true }, data: { toggle: "dropdown" }
+            = link_to "All Themes", "#all-themes", class: "nav-link dropdown-toggle", aria: { expanded: false, haspopup: true }, data: { toggle: "dropdown" }
             .dropdown-menu aria-labelledby="Preview" 
-              = render partial: "download_links", locals: { theme: @name }
-      ul.nav.navbar-nav.hidden-md-down.pull-xs-right
-        li.nav-item.nav-btn-group 
-          span Navbar style 
-          .btn-group data-toggle="buttons" 
-            label.btn.btn-primary.js-navbar-toggle data-classes="navbar-light bg-faded" 
-              input autocomplete="off" checked="" name="options" type="radio" Light
-            label.btn.btn-primary.js-navbar-toggle data-classes="navbar-dark bg-primary"
-              input autocomplete="off" name="options" type="radio" Primary
-            label.btn.btn-primary.js-navbar-toggle data-classes="navbar-dark bg-inverse"
-              input autocomplete="off" name="options" type="radio" Dark
+              = link_to "Default", theme_path("default"), class: "dropdown-item"
+              .dropdown-divider
+              - Theme.all.each do |theme|
+                - next if theme == "default"
+                = link_to theme.capitalize, theme_path(theme), class: "dropdown-item"
+          li.nav-item = link_to "Help", help_path, class: "nav-link"
+          - if @name && @name != "default"
+            li.nav-item.dropdown
+              = link_to content_tag(:i, nil, class: "fa fa-download") + " Download #{@name.capitalize}", "#download", class: "nav-link", aria: { expanded: false, haspopup: true }, data: { toggle: "dropdown" }
+              .dropdown-menu aria-labelledby="Preview" 
+                = render partial: "download_links", locals: { theme: @name }
+        ul.nav.navbar-nav.hidden-sm-down.pull-xs-right
+          li.nav-item.nav-btn-group 
+            span Navbar style 
+            .btn-group data-toggle="buttons" 
+              label.btn.btn-primary.js-navbar-toggle data-classes="navbar-light bg-faded" 
+                input autocomplete="off" checked="" name="options" type="radio" Light
+              label.btn.btn-primary.js-navbar-toggle data-classes="navbar-dark bg-primary"
+                input autocomplete="off" name="options" type="radio" Primary
+              label.btn.btn-primary.js-navbar-toggle data-classes="navbar-dark bg-inverse"
+                input autocomplete="off" name="options" type="radio" Dark
