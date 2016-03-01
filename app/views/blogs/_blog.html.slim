@@ -1,5 +1,4 @@
 .blog-post
   h2.blog-post-title = link_to blog.title, blog
   p.blog-post-meta = blog.created_at.strftime('%b %d, %Y')
-  p 
-    = truncate(raw CGI::escapeHTML(blog.body))
+  = blog.body.html_safe

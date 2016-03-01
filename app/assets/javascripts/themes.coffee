@@ -6,7 +6,8 @@ $ ->
   # Set themes side navbar affix height
   if $("#navbar").length
     height = document.getElementById("navbar").offsetHeight
-    height = height - 110;
+    google_ad_height = 90
+    height = height - 90 + google_ad_height;
     ScrollPosStyler(document, window, height);
   if $("#blogs").length
     height = $("h1").get(0).offsetHeight
