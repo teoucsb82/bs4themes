@@ -29,6 +29,7 @@ $ ->
     $("header .navbar").removeClass("navbar-light navbar-dark bg-primary bg-inverse bg-faded")
     $("header .navbar").addClass($(this).data("classes"))
 
+  # Footer toggler
   window.onscroll = (ev) ->
     if window.innerHeight + window.scrollY >= document.body.offsetHeight
       $("footer.footer").addClass("visible")
@@ -36,4 +37,5 @@ $ ->
       $("footer.footer").removeClass("visible")
     return
 
+  # google ads
   (adsbygoogle = window.adsbygoogle || []).push({});

@@ -11,9 +11,8 @@
             = link_to content_tag(:i, nil, class: "fa fa-cloud-download") + " #{@name.capitalize}.css (compiled)", "https://s3-us-west-2.amazonaws.com/bs4themes/themes/#{@name}/#{@name}.css", class: "btn btn-primary btn", rel: "nofollow"
             | &nbsp;
             = link_to content_tag(:i, nil, class: "fa fa-file-archive-o") + " #{@name.capitalize}.zip (all files)", "https://s3-us-west-2.amazonaws.com/bs4themes/themes/#{@name}/#{@name}.zip", class: "btn btn-primary btn", rel: "nofollow"
-.container
-  .card
-    = render 'layouts/ads'
+.container.m-b-2
+  = render 'layouts/ads'
 
   .row
     .col-sm-2.hidden-md-down

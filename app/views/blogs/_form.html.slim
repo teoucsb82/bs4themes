@@ -18,7 +18,7 @@
           .form-group.row
             = f.label :body, class: "col-sm-2 form-control-label"
             .col-sm-10
-              = f.text_area :body, placeholder: "Blog body", class: "form-control", rows: "8"
+              = f.text_area :body, placeholder: "Blog body", class: "form-control trumbowyg", rows: "8"
           .form-group.row
             .col-sm-offset-2.col-sm-10
               = link_to content_tag(:i, nil, class: "fa fa-arrow-left") + ' Back', blogs_path, class: "btn btn-warning-outline btn-lg"
