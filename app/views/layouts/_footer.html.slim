@@ -8,8 +8,6 @@ footer.footer.navbar-dark.bg-inverse
       li.nav-item = link_to "Privacy & Terms of Service", privacy_path
     ul.nav.navbar-nav.pull-xs-right
       li.nav-item
-        | © #{Date.today.year} 
-        = link_to "www.bs4themes.com", "http://www.bs4themes.com"
-        |  by 
-        = mail_to "teo@dellamico.com", "Teo", encode: "javascript"
+        | © #{Date.today.year} www.bs4themes.com by 
+        = link_to "Teo", "http://www.dellamico.com", target: "_blank"
         | . All rights reserved.

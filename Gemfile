@@ -38,3 +38,7 @@ gem 'friendly_id', '~> 5.1.0'
 gem 'devise'
 gem 'meta-tags'
 gem 'sitemap_generator'
+
+# Images
+gem 'carrierwave'
+gem 'cloudinary'

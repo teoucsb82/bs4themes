@@ -20,6 +20,11 @@
             .col-sm-10
               = f.text_area :body, placeholder: "Blog body", class: "form-control trumbowyg", rows: "8"
           .form-group.row
+            .col-sm-10.col-sm-offset-2
+              = f.hidden_field :picture_cache
+              = f.file_field :picture, class: "form-control-file btn btn-primary btn-lg"
+
+          .form-group.row
             .col-sm-offset-2.col-sm-10
               = link_to content_tag(:i, nil, class: "fa fa-arrow-left") + ' Back', blogs_path, class: "btn btn-warning-outline btn-lg"
               = f.submit "Post", class: "btn btn-success btn-lg pull-xs-right"
