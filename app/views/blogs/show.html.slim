@@ -8,14 +8,19 @@ section#blog-post
           li.active = @blog.title.humanize
     .row
       .col-sm-8.blog-main
-        h1.display-3 = @blog.title
+        article#blog-post-container
+          h1.display-3 = @blog.title
+          hr
+          p
+            span.text-muted = @blog.created_at.strftime('%b %d, %Y')
+            | by Teo
+          - if @blog.picture.present?
+            = image_tag(@blog.picture_url, height: 550, width: 350, crop: :fill, quality: 80, alt: @blog.title, class: "img-fluid")
+          = @blog.body.html_safe
         hr
-        p
-          span.text-muted = @blog.created_at.strftime('%b %d, %Y')
-          | by Teo
-        - if @blog.picture.present?
-          = image_tag(@blog.picture_url, height: 550, width: 350, crop: :fill, quality: 80, alt: @blog.title, class: "img-fluid")
-        = @blog.body.html_safe
-        = render 'comments'
+        article#cta
+          = link_to "View All Themes", root_url, class: "btn btn-lg btn-info btn-block p-y-2"
+        article#comments
+          = render 'comments'
       #ad-content.col-sm-3.col-sm-offset-1
         = render 'sidebar'
