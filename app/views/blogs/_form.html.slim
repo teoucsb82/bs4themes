@@ -19,10 +19,19 @@
             = f.label :body, class: "col-sm-2 form-control-label"
             .col-sm-10
               = f.text_area :body, placeholder: "Blog body", class: "form-control trumbowyg", rows: "8"
+          hr
           .form-group.row
-            .col-sm-10.col-sm-offset-2
-              = f.hidden_field :picture_cache
-              = f.file_field :picture, class: "form-control-file btn btn-primary btn-lg"
+            = f.label :seo_keywords, class: "col-sm-2 form-control-label"
+            .col-sm-10
+              = f.text_field :seo_keywords, placeholder: "SEO, Keywords, Money", class: "form-control form-control-lg"
+          .form-group.row
+            = f.label :seo_description, class: "col-sm-2 form-control-label"
+            .col-sm-10
+              = f.text_field :seo_description, placeholder: "SEO Description", class: "form-control form-control-lg"
+          / .form-group.row
+          /   .col-sm-10.col-sm-offset-2
+          /     = f.hidden_field :picture_cache
+          /     = f.file_field :picture, class: "form-control-file btn btn-primary btn-lg"
 
           .form-group.row
             .col-sm-offset-2.col-sm-10
