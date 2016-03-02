@@ -42,28 +42,16 @@
   font-family: $headings-font-family;
 }
 .navbar {
-  &.bg-faded {
-    @include gradient-vertical(mix(white, $brand-primary, 90%), $brand-primary, 95%);
-  }
-  &.bg-primary {
-    @include gradient-vertical($brand-primary, mix(white, $brand-info, 50%), 90%, 95%);
-  }
-  &.bg-inverse {
-    @include gradient-vertical(mix(black, $brand-primary, 80%), $brand-primary, 80%);
-  }
+  &.bg-faded { @include gradient-vertical(mix(white, $brand-primary, 90%), $brand-primary, 95%); }
+  &.bg-primary { @include gradient-vertical($brand-primary, $body-bg, 90%, 95%); }
+  &.bg-inverse { @include gradient-vertical($body-bg, $brand-primary, 80%); }
 }
 header .navbar {
-  &.bg-faded {
-    @include box-shadow(0px $border-radius-sm 20px $brand-primary);
-  }
-  &.bg-primary {
-    @include box-shadow(0px $border-radius-sm 20px mix(white, $brand-info, 50%));
-  }
-  &.bg-inverse {
-    @include box-shadow(0px $border-radius-sm 20px $brand-primary);
-  }
+  &.bg-faded { @include box-shadow(0px $border-radius-sm $border-radius-lg $brand-primary); }
+  &.bg-primary { @include box-shadow(0px $border-radius-sm $border-radius-lg $body-bg); }
+  &.bg-inverse { @include box-shadow(0px $border-radius-sm $border-radius-lg $brand-primary); }
 }
-
+.nav-link { @include transition(all 0.25s ease); }
 
 // card             ===========================================================
 

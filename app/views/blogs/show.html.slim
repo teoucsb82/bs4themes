@@ -9,9 +9,13 @@ section#blog-post
     .row
       .col-sm-8.blog-main
         h1.display-3 = @blog.title
-        p.text-muted = @blog.created_at.strftime('%b %d, %Y')
+        hr
+        p
+          span.text-muted = @blog.created_at.strftime('%b %d, %Y')
+          | by Teo
         - if @blog.picture.present?
           = image_tag(@blog.picture_url, height: 550, width: 350, crop: :fill, quality: 80, alt: @blog.title, class: "img-fluid")
         = @blog.body.html_safe
+        = render 'comments'
       #ad-content.col-sm-3.col-sm-offset-1
         = render 'sidebar'

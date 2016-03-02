@@ -28,7 +28,7 @@ en:
     default:
       subtitle: "Bootstrap 4 Default CSS Demo"
       seo_description: "Default Bootstrap 4 CSS settings in display. Modals and popovers are enabled at bottom"
-      seo_keywords: "bootstrap, css, skins, templates, defaults, 4, popovers, modals, bleeding edge"
+      seo_keywords: "bootstrap, 4, css, modals, popovers, demo"
     leo:
       subtitle: "ooh la la it's leo"
       seo_description: "kasdfj lkasjdf lkj aldskfj lkjasd flkjkljadfklja dslkfja klfjaf lk"
@@ -40,12 +40,12 @@ en:
     slice:
       subtitle: "Bright, Soft, and Sugary"
       seo_description: "Introducing the Slice theme, with bright orange and purple highlights, can be used as a landing page or reskinned for a simple blog."
-      seo_keywords: "bright, gentle, soft, rounded, orange, purple"
+      seo_keywords: "bootstrap, bright, theme, slice, orange, purple, landing"
     lacey:
       subtitle: "Legible, yet elegant"
       seo_description: "Crisp and readable with three distinct tones, Lacey is perfect for a product or landing page."
-      seo_keywords: "bootstrap, theme, print, readable, legible, clean, crisp, clear"
+      seo_keywords: "bootstrap, elegant, tones, product, pages"
     glowworm:
-      subtitle: "Modern and vibrant"
+      subtitle: "Modern, bold and vibrant"
       seo_description: "Green theme with glowing highlights. Dark navbar mode is perfect for landing pages."
-      seo_keywords: "bootstrap, glow, sass, styling, responsive, theme, skin"
+      seo_keywords: "bootstrap, modern, bold, vibrant, green, glowing"
