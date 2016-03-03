@@ -13,6 +13,12 @@ header
               - Theme.all.each do |theme|
                 - next if theme == "default"
                 = link_to theme.capitalize, theme_path(theme), class: "dropdown-item"
+          - if @name && @name != "default"
+            li.nav-item.dropdown
+              = link_to "Samples", "#preview-page", class: "nav-link dropdown-toggle", aria: { expanded: false, haspopup: true }, data: { toggle: "dropdown" }
+              .dropdown-menu aria-labelledby="Preview" 
+                = link_to "Landing Page", preview_landing_theme_path(@name), class: "dropdown-item"
+                = link_to "Carousel Page", preview_carousel_theme_path(@name), class: "dropdown-item"
           li.nav-item = link_to "Help", help_path, class: "nav-link"
           li.nav-item = link_to "Blog", blogs_path, class: "nav-link"
           - if @name && @name != "default"

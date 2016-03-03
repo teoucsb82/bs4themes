@@ -6,9 +6,6 @@ class PagesController < ApplicationController
                   keywords: 'bootstrap, quickstart, help, sass, installation, themes, skin, rails, ruby, asset pipeline'
   end
 
-  def about 
-  end
-
   def privacy
     set_meta_tags title: "Privacy and Terms of Service", reverse: true
   end

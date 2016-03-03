@@ -2,7 +2,7 @@ doctype html
 html
   head
     = display_meta_tags
-    - if action_name == "show" && controller_name == "themes"
+    - if controller_name == "themes" && action_name != "index"
       = stylesheet_link_tag "themes/#{params[:id]}/manifest", media: 'all'
     - else
       = stylesheet_link_tag 'application', media: 'all'

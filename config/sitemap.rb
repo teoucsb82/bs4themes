@@ -22,9 +22,17 @@ SitemapGenerator::Sitemap.create do
   # Add all articles:
   #
   add '/themes/lacey'
+  add '/themes/lacey/preview/landing'
+  add '/themes/lacey/preview/carousel'
   add '/themes/glowworm'
+  add '/themes/glowworm/preview/landing'
+  add '/themes/glowworm/preview/carousel'
   add '/themes/slice'
+  add '/themes/slice/preview/landing'
+  add '/themes/slice/preview/carousel'
   add '/themes/default'
+  add '/themes/default/preview/landing'
+  add '/themes/default/preview/carousel'
   add '/blog'
   add '/privacy'
   add '/help'

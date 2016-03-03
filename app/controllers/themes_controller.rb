@@ -16,4 +16,24 @@ class ThemesController < ApplicationController
                   description: I18n.t("themes.#{@name}.seo_description"),
                   keywords: I18n.t("themes.#{@name}.seo_keywords")
   end
+
+  def preview_landing
+    return redirect_to themes_url unless Theme.all.include?(params[:id])
+    @name = params[:id].downcase
+    @navbar_classes = @name != 'default' ? 'navbar-dark bg-primary' : 'navbar-light bg-faded'
+    set_meta_tags title: @name.capitalize + " Landing Preview", 
+                  description: "Basic landing page built with Bootstrap 4 and the #{@name} theme",
+                  keywords: I18n.t("themes.#{@name}.seo_keywords")
+    render :sample_landing_page
+  end
+
+  def preview_carousel
+    return redirect_to themes_url unless Theme.all.include?(params[:id])
+    @name = params[:id].downcase
+    @navbar_classes = @name != 'default' ? 'navbar-dark bg-primary' : 'navbar-light bg-faded'
+    set_meta_tags title: @name.capitalize + " Carousel Preview", 
+                  description: "Basic carousel page built with Bootstrap 4 and the #{@name} theme",
+                  keywords: I18n.t("themes.#{@name}.seo_keywords")
+    render :sample_carousel_page
+  end
 end
