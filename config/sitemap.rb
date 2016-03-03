@@ -21,10 +21,11 @@ SitemapGenerator::Sitemap.create do
   #
   # Add all articles:
   #
-  add theme_path("default")
-  add theme_path("lacey")
-  add theme_path("slice")
-
+  add '/themes/lacey'
+  add '/themes/glowworm'
+  add '/themes/slice'
+  add '/themes/default'
+  add '/blog'
   add '/privacy'
   add '/help'
 end

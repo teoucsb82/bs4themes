@@ -1,3 +1,6 @@
+.bg-faded {
+  color: $body-bg;
+}
 // images           ===========================================================
 
 
@@ -11,11 +14,27 @@
 
 
 // tables           ===========================================================
-
+.table-striped tbody tr:nth-of-type(odd) {
+  color: $body-bg;
+}
+.table-active { color: $body-bg; }
+.table-success { color: $body-bg; }
+.table-info { color: $body-bg; }
+.table-warning { color: $body-bg; }
+.table-danger { color: $body-bg; }
+.table-hover tbody tr:hover { color: $body-bg; }
+.table-inverse,
+.thead-inverse th {
+  background-color: $gray-lighter;
+  color: $gray-dark;
+}
 
 // forms            ===========================================================
-
-
+.radio,
+.checkbox {
+  margin-bottom: ($spacer * .25);
+}
+.form-group.row > .form-control-label { text-align: right; }
 // buttons          ===========================================================
 
 
@@ -51,19 +70,28 @@ header .navbar {
   &.bg-primary { @include box-shadow(0px $border-radius-sm $border-radius-lg $body-bg); }
   &.bg-inverse { @include box-shadow(0px $border-radius-sm $border-radius-lg $brand-primary); }
 }
-.nav-link { @include transition(all 0.25s ease); }
+.nav-link { @include transition(all $duration ease); }
 
 // card             ===========================================================
 
 
 // breadcrumb       ===========================================================
-
+ol.breadcrumb { 
+  border: 1px solid $body-color;
+}
 
 // pagination       ===========================================================
-
+.pagination a {
+  @include transition(all $duration ease);
+  &:hover {
+    text-decoration: none;
+  }
+}
 
 // pager            ===========================================================
-
+.pager a {
+  @include transition(all $duration ease);
+}
 
 // labels           ===========================================================
 

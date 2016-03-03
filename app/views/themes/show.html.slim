@@ -1,17 +1,24 @@
 .clearfix.m-y-3
 .container
-  .card-deck-wrapper.m-b-2
-    .card-deck
-      .card.card-block.card-primary.card-inverse
-        blockquote.card-blockquote
-          h1.display-1 = params[:id].capitalize
-      .card.card-block
-        blockquote.blockquote-reverse
-          h3.card-title = t("themes.#{@name}.subtitle")
+  .card.card-primary-outline
+    .card-block
+      .row
+        .col-sm-8
+          h1.display-3 = @name.capitalize
+          h3 = t("themes.#{@name}.subtitle")
+          p.lead = t("themes.#{@name}.seo_description")
           - unless @name == "default"
-            = link_to content_tag(:i, nil, class: "fa fa-cloud-download") + " #{@name.capitalize}.css (compiled)", "https://s3-us-west-2.amazonaws.com/bs4themes/themes/#{@name}/#{@name}.css", class: "btn btn-primary btn", rel: "nofollow"
-            | &nbsp;
-            = link_to content_tag(:i, nil, class: "fa fa-file-archive-o") + " #{@name.capitalize}.zip (all files)", "https://s3-us-west-2.amazonaws.com/bs4themes/themes/#{@name}/#{@name}.zip", class: "btn btn-primary btn", rel: "nofollow"
+            .btn-group
+              = link_to content_tag(:i, nil, class: "fa fa-cloud-download") + " #{@name.capitalize}.css (compiled)", "https://s3-us-west-2.amazonaws.com/bs4themes/themes/#{@name}/#{@name}.css", class: "btn btn-primary btn-lg"
+              = link_to content_tag(:i, nil, class: "fa fa-file-archive-o") + " #{@name.capitalize}.zip (all files)", "https://s3-us-west-2.amazonaws.com/bs4themes/themes/#{@name}/#{@name}.zip", class: "btn btn-secondary btn-lg"
+        .col-sm-4
+          ul.list-group.text-xs-right
+            li.list-group-item.list-group-item.active: strong Primary
+            li.list-group-item.list-group-item-success: strong Success
+            li.list-group-item.list-group-item-info: strong Info
+            li.list-group-item.list-group-item-warning: strong Warning
+            li.list-group-item.list-group-item-danger: strong Danger
+        
 .container
   = render 'layouts/ads'
 

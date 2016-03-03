@@ -5,6 +5,9 @@
     @include gradient-directional(rgba(0,0,0,.0001), rgba(0,0,0,.5), -45deg);
   }
 }
+#blog-header .jumbotron {
+  @include gradient-directional(rgba(0,0,0,.0001), rgba(0,0,0,.5), -45deg);
+}
 #value {
   .fa { margin-right: $spacer-x; }
 }

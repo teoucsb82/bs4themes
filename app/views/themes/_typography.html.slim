@@ -18,7 +18,7 @@ section#typography
       h6 h6. Bootstrap heading
   
   .row
-    .col-sm-4
+    .col-sm-5
       article#typography-body-text
         h3 Body text
         p
@@ -32,7 +32,7 @@ section#typography
           .text-info This is an example of .text-info
           .text-warning This is an example of .text-warning
           .text-danger This is an example of .text-danger
-    .col-sm-4
+    .col-sm-7
       article#typography-text-emphasis
         h3 Text emphasis
         p 
@@ -50,7 +50,8 @@ section#typography
             | An abbreviation of the word attribute is 
             abbr title="attribute"  attr
             | .
-    .col-sm-4
+  .row
+    .col-sm-8
       article#typography-blockquotes
         h3 Blockquotes
         p
@@ -65,3 +66,15 @@ section#typography
             footer.blockquote-footer 
               | Walter
               cite title="Source Title"  The Big Lebowski
+    .col-sm-4
+      article#typography-code
+        h3 Code
+        p
+          pre
+            code = "x = 1"
+            br
+            code = "y = 2"
+            br
+            code = "z = x + y"
+            br
+            code = "# z => 3"

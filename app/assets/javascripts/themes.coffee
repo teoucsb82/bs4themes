@@ -7,11 +7,11 @@ $ ->
   if $("#navbar").length
     height = document.getElementById("navbar").offsetHeight
     google_ad_height = 90
-    height = height - 90 + google_ad_height;
+    height = height + 190 + google_ad_height;
     ScrollPosStyler(document, window, height);
   if $("#blogs").length
     height = $("h1").get(0).offsetHeight
-    height = height + 250;
+    height = height + 120;
     ScrollPosStyler(document, window, height);
 
   # Start Bootstrap js 

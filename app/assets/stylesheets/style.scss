@@ -1,5 +1,5 @@
 // Core variables and mixins
-@import "themes/lacey/variables";
+@import "themes/glowworm/variables";
 @import "bootstrap-4/mixins";
 
 // Reset and dependencies
@@ -50,9 +50,9 @@
 @import "bootstrap-4/utilities-responsive";
 
 // other vendor
-@import "font-awesome";
-@import "trumbowyg/trumbowyg";
+// @import "font-awesome";
+// @import "trumbowyg/trumbowyg";
 
 
-@import "themes/lacey/skin";
-@import "skin";
+@import "themes/glowworm/skin";
+// @import "skin";

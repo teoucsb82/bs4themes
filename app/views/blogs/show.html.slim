@@ -13,7 +13,7 @@ section#blog-post
           hr
           p
             span.text-muted = @blog.created_at.strftime('%b %d, %Y')
-            | by Teo
+            |  by Teo
           - if @blog.picture.present?
             = image_tag(@blog.picture_url, height: 550, width: 350, crop: :fill, quality: 80, alt: @blog.title, class: "img-fluid")
           = @blog.body.html_safe
