@@ -51,22 +51,16 @@ section#previews.m-y-3
         - next if theme == "default"
         .col-lg-4
           .card
-            h2.card-header.bg-inverse 
-              | #{theme.capitalize}
-              span.pull-xs-right
-                .btn-group
-                  button.btn.btn-sm.btn-primary type="button" = content_tag(:i, nil, class: "fa fa-download") + " Download"
-                  button.btn.btn-sm.btn-primary.dropdown-toggle aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" type="button" 
-                  .dropdown-menu
-                    = render partial: "download_links", locals: { theme: theme }
-            .card-block
-              ul.nav.nav-tabs role="tablist" 
-                li.nav-item 
-                  = link_to "Light", "##{theme}-light", class: "nav-link", data: { toggle: "tab" }, role: "tab"
-                li.nav-item 
-                  = link_to "Primary", "##{theme}-primary", class: "nav-link active", data: { toggle: "tab" }, role: "tab"
-                li.nav-item 
-                  = link_to "Dark", "##{theme}-dark", class: "nav-link", data: { toggle: "tab" }, role: "tab"
+            = link_to theme_path(theme)
+              h2.card-header.bg-inverse.text-xs-center #{theme.capitalize}
+              .card-block
+                ul.nav.nav-tabs role="tablist" 
+                  li.nav-item 
+                    = link_to "Light", "##{theme}-light", class: "nav-link", data: { toggle: "tab" }, role: "tab"
+                  li.nav-item 
+                    = link_to "Primary", "##{theme}-primary", class: "nav-link active", data: { toggle: "tab" }, role: "tab"
+                  li.nav-item 
+                    = link_to "Dark", "##{theme}-dark", class: "nav-link", data: { toggle: "tab" }, role: "tab"
             .card-block
               .tab-content
                 .tab-pane.fade.in id="#{theme}-light" role="tabpanel"
@@ -81,4 +75,9 @@ section#previews.m-y-3
 
             .card-footer.card-primary.bg-inverse
               .text-xs-center
-                = link_to content_tag(:i, nil, class: "fa fa-eye") + " Preview #{theme.capitalize}", theme_path(theme), class: "btn btn-primary btn-lg"
+                .btn-group
+                  button.btn.btn-sm.btn-primary type="button" = content_tag(:i, nil, class: "fa fa-download") + " Download"
+                  button.btn.btn-sm.btn-primary.dropdown-toggle aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" type="button" 
+                  .dropdown-menu
+                    = render partial: "download_links", locals: { theme: theme }
+                = link_to content_tag(:i, nil, class: "fa fa-eye") + " Preview", theme_path(theme), class: "btn btn-primary btn-sm"
