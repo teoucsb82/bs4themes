@@ -1,0 +1,182 @@
+// images           ===========================================================
+
+
+// code             ===========================================================
+
+
+// grid             ===========================================================
+
+
+// type             ===========================================================
+
+
+// tables           ===========================================================
+.table-inverse,
+.thead-inverse th {
+  background-color: $brand-primary-dark;
+}
+
+// forms            ===========================================================
+
+
+// buttons          ===========================================================
+
+
+// animation        ===========================================================
+
+
+// dropdown         ===========================================================
+
+
+// button-group     ===========================================================
+
+
+// input-group      ===========================================================
+
+
+// custom-forms     ===========================================================
+.c-input > input:checked ~ .c-indicator {
+  background-color: $brand-primary;
+}
+
+// nav              ===========================================================
+.nav-tabs {
+  border-bottom: $border-width solid $nav-tabs-border-color;
+}
+.nav-tabs .nav-link {
+  border-bottom: none; 
+}
+
+// navbar           ===========================================================
+.navbar {
+  &.bg-inverse {
+    background-color: $brand-primary-dark;
+    a { color: $brand-accent-dark; }
+    
+    .nav-link,
+    .nav-item.active {
+      color: $brand-accent;
+    }
+
+    .dropdown-menu {
+      background-color: $brand-primary-dark;
+      .dropdown-item { 
+        color: $brand-accent-dark;
+      }
+      .dropdown-item:focus, .dropdown-item:hover {
+        background-color: $brand-primary-dark;
+        color: #fff;
+      }
+      .dropdown-divider { 
+        @include nav-divider($brand-primary);
+      }
+    }
+  }
+
+  &.bg-faded {
+    .dropdown-menu {
+      background-color: $gray-lightest;
+      .dropdown-item { 
+        color: rgba(0,0,0,.7);
+      }
+      .dropdown-item:focus, .dropdown-item:hover {
+        background-color: $gray-lightest;
+        color: rgba(0,0,0,.5);
+      }
+      .dropdown-divider { 
+        @include nav-divider($brand-primary);
+      }
+    }
+  }
+
+}
+
+// card             ===========================================================
+
+
+// breadcrumb       ===========================================================
+
+
+// pagination       ===========================================================
+.pagination .page-item {
+  &.active .page-link {
+    border-color: $brand-primary-dark;
+  }
+  .page-link {
+    border-left-width: 1px;
+    border-right-width: 1px;
+  }
+  &:first-of-type { 
+    .page-link {
+      border-left-width: $border-width;
+      border-top-left-radius: $border-radius * 2;
+      border-bottom-left-radius: $border-radius * 2;
+    }
+  }
+  &:last-of-type { 
+    .page-link {
+      border-right-width: $border-width; 
+      border-top-right-radius: $border-radius * 2;
+      border-bottom-right-radius: $border-radius * 2;
+    }
+  }
+}
+
+// pager            ===========================================================
+
+
+// labels           ===========================================================
+
+
+// jumbotron        ===========================================================
+
+
+// alert            ===========================================================
+
+
+// progress         ===========================================================
+
+
+// media            ===========================================================
+
+
+// list-group       ===========================================================
+
+
+// responsive-embed ===========================================================
+
+
+// close            ===========================================================
+
+
+// modal            ===========================================================
+.modal-header { 
+  background-color: $brand-primary-dark;
+  color: white;
+}
+.modal-content {
+  border-color: $brand-primary-dark;
+}
+
+// tooltip          ===========================================================
+
+
+// popover          ===========================================================
+.popover-title { color: rgba(255,255,255,.8); }
+.popover { padding: 0; }
+// carousel         ===========================================================
+
+
+.btn,
+.card,
+.breadcrumb,
+.pagination,
+.pager li a,
+.jumbotron,
+.alert,
+.progress,
+.table,
+.nav-pills .nav-link.active,
+.list-group {
+  @include box-shadow(0 2px 2px rgba(0,0,0,.125));
+}

@@ -24,7 +24,7 @@ en:
     default:
       subtitle: "Bootstrap 4 Default CSS Demo"
       seo_description: "Default Bootstrap 4 CSS settings in display. Modals and popovers are enabled at bottom"
-      seo_keywords: "bootstrap, 4, css, modals, popovers, demo"
+      seo_keywords: "bootstrap 4 themes, bootstrap default skin"
     slice:
       subtitle: "Bright, Soft, and Sugary"
       seo_description: "Introducing the Slice theme, with bright orange and purple highlights, can be used as a landing page or reskinned for a simple blog."
@@ -37,3 +37,7 @@ en:
       subtitle: "Modern, bold and vibrant"
       seo_description: "Teal theme with glowing highlights. Dark navbar mode is perfect for landing pages."
       seo_keywords: "bootstrap, modern, bold, vibrant, teal, neon, glowing"
+    flatro:
+      subtitle: "Sharp and focused"
+      seo_description: "Print-based theme built with a base purple/gold color scheme, easily updated with 2 variables."
+      seo_keywords: "bootstrap 4 theme, bootstrap 4 sass template"

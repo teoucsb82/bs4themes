@@ -5,7 +5,7 @@ section#splash
       | Customized skins built for 
       = link_to "Bootstrap 4", "http://v4-alpha.getbootstrap.com", target: "_blank"
       | .
-    .fb-like data-share="true" data-width="450" data-show-faces="true"
+    .fb-like data-share="true" data-width="350" data-show-faces="true"
 section#value
   .container.m-t-3
     .row
@@ -47,7 +47,7 @@ section#ads
 section#previews.m-y-3
   .container
     .row
-      - Theme.all.each do |theme|
+      - @themes.each do |theme|
         - next if theme == "default"
         .col-lg-4
           .card
@@ -80,4 +80,4 @@ section#previews.m-y-3
                   button.btn.btn-sm.btn-primary.dropdown-toggle aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" type="button" 
                   .dropdown-menu
                     = render partial: "download_links", locals: { theme: theme }
-                = link_to content_tag(:i, nil, class: "fa fa-eye") + " Preview", theme_path(theme), class: "btn btn-primary btn-sm"
+                = link_to content_tag(:i, nil, class: "fa fa-eye") + " Preview", theme_path(theme), class: "btn btn-secondary btn-sm"
