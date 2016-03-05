@@ -5,7 +5,7 @@ class ThemesController < ApplicationController
     @navbar_classes = 'navbar-dark bg-inverse'
     set_meta_tags title: "Responsive Skins and Templates", 
                   description: "Customized Bootstrap 4 themes. Fully responsive with multiple navbars styles, showcasing the latest framework upgrades including cards and button outlines.",
-                  keywords: 'bootstrap, themes, responsive, skins, templates, css, style, sass, scss'
+                  keywords: 'bootstrap 4 themes, free bootstrap themes, bootstrap skins'
   end
 
   def show

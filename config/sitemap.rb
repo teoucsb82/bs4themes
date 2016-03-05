@@ -21,6 +21,9 @@ SitemapGenerator::Sitemap.create do
   #
   # Add all articles:
   #
+  add '/themes/flatro'
+  add '/themes/flatro/preview/landing'
+  add '/themes/flatro/preview/carousel'
   add '/themes/lacey'
   add '/themes/lacey/preview/landing'
   add '/themes/lacey/preview/carousel'
