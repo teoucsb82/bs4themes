@@ -26,17 +26,22 @@
 //
 // Grayscale and brand colors for use across Bootstrap.
 
-$gray-dark:                 #373a3c !default;
-$gray:                      #55595c !default;
-$gray-light:                #818a91 !default;
-$gray-lighter:              #eceeef !default;
-$gray-lightest:             #f7f7f9 !default;
+$gray-dark:                 #212121 !default; // google grey 900
+$gray:                      #9E9E9E !default; // google grey 500
+$gray-light:                #BDBDBD !default; // google grey 400
+$gray-lighter:              #E0E0E0 !default; // google grey 300
+$gray-lightest:             #EEEEEE !default; // google grey 200
 
-$brand-primary:             #0275d8 !default;
-$brand-success:             #5cb85c !default;
-$brand-info:                #5bc0de !default;
-$brand-warning:             #f0ad4e !default;
-$brand-danger:              #d9534f !default;
+$brand-primary:             #F44336 !default; // google yellow 500
+$brand-primary-light:       mix(white, $brand-primary, 30%) !default;
+$brand-primary-dark:        mix(black, $brand-primary, 30%) !default;
+$brand-secondary:           invert(#F44336) !default; 
+$brand-secondary-light:     mix(white, $brand-secondary, 30%) !default;
+$brand-secondary-dark:      mix(black, $brand-secondary, 30%) !default;
+$brand-success:             #33691E !default; // google light green 900
+$brand-info:                #006064 !default; // google cyan 900
+$brand-warning:             #E65100 !default; // google orange 900
+$brand-danger:              #880E4F !default; // google pink 900
 
 
 // Options
@@ -93,9 +98,9 @@ $body-color:                 $gray-dark !default;
 // Style anchor elements.
 
 $link-color:                 $brand-primary !default;
-$link-decoration:            none !default;
+$link-decoration:            underline !default;
 $link-hover-color:           darken($link-color, 15%) !default;
-$link-hover-decoration:      underline !default;
+$link-hover-decoration:      none !default;
 
 
 // Grid breakpoints
@@ -246,9 +251,9 @@ $btn-primary-color:              #fff !default;
 $btn-primary-bg:                 $brand-primary !default;
 $btn-primary-border:             $btn-primary-bg !default;
 
-$btn-secondary-color:            $gray-dark !default;
-$btn-secondary-bg:               #fff !default;
-$btn-secondary-border:           #ccc !default;
+$btn-secondary-color:            #fff !default;
+$btn-secondary-bg:               $brand-secondary !default;
+$btn-secondary-border:           $brand-secondary-dark !default;
 
 $btn-info-color:                 #fff !default;
 $btn-info-bg:                    $brand-info !default;
