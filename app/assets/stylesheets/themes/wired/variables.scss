@@ -110,15 +110,15 @@ $link-hover-decoration:      underline !default;
 
 $grid-breakpoints: (
   // Extra small screen / phone
-  xs: 0 * 0.86,
+  xs: 0 * 0.95,
   // Small screen / phone
-  sm: 544px * 0.86,
+  sm: 544px * 0.95,
   // Medium screen / tablet
-  md: 768px * 0.86,
+  md: 768px * 0.95,
   // Large screen / desktop
-  lg: 992px * 0.86,
+  lg: 992px * 0.95,
   // Extra large screen / wide desktop
-  xl: 1200px * 0.86
+  xl: 1200px * 0.95
 ) !default;
 
 
@@ -127,10 +127,10 @@ $grid-breakpoints: (
 // Define the maximum width of `.container` for different screen sizes.
 
 $container-max-widths: (
-  sm: 576px * 0.86,
-  md: 720px * 0.86,
-  lg: 940px * 0.86,
-  xl: 1140px * 0.86
+  sm: 576px * 0.95,
+  md: 720px * 0.95,
+  lg: 940px * 0.95,
+  xl: 1140px * 0.95
 ) !default;
 
 
@@ -139,7 +139,7 @@ $container-max-widths: (
 // Set the number of columns and specify the width of the gutters.
 
 $grid-columns:               12 !default;
-$grid-gutter-width:          1.875rem * 0.86 !default; // 30px
+$grid-gutter-width:          1.875rem !default; // 30px
 
 
 // Typography
