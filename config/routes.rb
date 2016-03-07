@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :blogs, path: 'blog'
   resources :themes do
     member do
+      get "/preview/blog" => 'themes#preview_blog', as: :preview_blog
       get "/preview/landing" => 'themes#preview_landing', as: :preview_landing
       get "/preview/carousel" => 'themes#preview_carousel', as: :preview_carousel
     end
