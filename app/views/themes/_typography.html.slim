@@ -51,7 +51,7 @@ section#typography
             abbr title="attribute"  attr
             | .
   .row
-    .col-sm-8
+    .col-sm-7
       article#typography-blockquotes
         h3 Blockquotes
         p
@@ -66,15 +66,22 @@ section#typography
             footer.blockquote-footer 
               | Walter
               cite title="Source Title"  The Big Lebowski
-    .col-sm-4
+    .col-sm-5
       article#typography-code
-        h3 Code
+        h3 Inline code
         p
-          pre
-            code = "x = 1"
-            br
-            code = "y = 2"
-            br
-            code = "z = x + y"
-            br
-            code = "# z => 3"
+          |
+          code = "<code>"
+          | tags look like this.
+        h3 User input
+        p 
+          | Press 
+          kbd
+            |
+            kbd alt
+            |  + 
+            kbd f4
+          |  to win $$
+        h3 Sample output
+        p 
+          samp How about a nice game of chess?

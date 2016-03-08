@@ -4,8 +4,8 @@
     .card-block
       .row
         .col-sm-8
-          h1.display-3 = @name.capitalize
-          h3 = t("themes.#{@name}.subtitle")
+          h1.display-2 = @name.capitalize
+          h2 = t("themes.#{@name}.subtitle")
           p.lead = t("themes.#{@name}.seo_description")
           - unless @name == "default"
             .btn-group

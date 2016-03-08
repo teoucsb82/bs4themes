@@ -1,11 +1,12 @@
 section#splash
-  .jumbotron.text-xs-center.m-t-3
-    h1.jumbotron-heading.display-2.p-t-2 Bootstrap 4 Themes
-    p.lead.text-muted.p-b-2
-      | Customized skins built for 
-      = link_to "Bootstrap 4", "http://v4-alpha.getbootstrap.com", target: "_blank"
-      | .
-    .fb-like data-share="true" data-width="350" data-show-faces="true"
+  .jumbotron.text-xs-center
+    h1.display-1.p-t-1 Bootstrap 4 Themes
+    p.lead.p-b-2
+      | Free, customized skins, built with love. Exclusively for 
+      = link_to "Bootstrap 4", "http://v4-alpha.getbootstrap.com", class: "btn btn-sm btn-primary", target: "_blank"
+section#ads
+  .container
+    = render 'layouts/ads'
 section#value
   .container.m-t-3
     .row
@@ -40,10 +41,6 @@ section#value
           i.fa.fa-terminal
           | Variables FTW
         p Modifying a theme is as easy as changing a variable. Update shadows, rounded edges, colors and responsive breakpoints with ease.
-section#ads
-  .container
-    = render 'layouts/ads'
-
 section#previews.m-y-3
   .container
     .row
@@ -65,13 +62,13 @@ section#previews.m-y-3
               .tab-content
                 .tab-pane.fade.in id="#{theme}-light" role="tabpanel"
                   = link_to theme_path(theme) do
-                    img.card-img-top.img-fluid src="http://res.cloudinary.com/viadeca/image/upload/q_55,w_420,h_220,c_fill/bs4themes/#{theme}/#{theme}_light.png" alt="#{theme.capitalize}"
+                    img.card-img-top.img-fluid src="http://res.cloudinary.com/viadeca/image/upload/q_58,w_420,h_220,c_fill/bs4themes/#{theme}/#{theme}_light.png" alt="#{theme.capitalize}"
                 .tab-pane.fade.in.active id="#{theme}-primary" role="tabpanel"
                   = link_to theme_path(theme) do
-                    img.card-img-top.img-fluid src="http://res.cloudinary.com/viadeca/image/upload/q_55,w_420,h_220,c_fill/bs4themes/#{theme}/#{theme}_primary.png" alt="#{theme.capitalize}"
+                    img.card-img-top.img-fluid src="http://res.cloudinary.com/viadeca/image/upload/q_58,w_420,h_220,c_fill/bs4themes/#{theme}/#{theme}_primary.png" alt="#{theme.capitalize}"
                 .tab-pane.fade.in id="#{theme}-dark" role="tabpanel"
                   = link_to theme_path(theme) do
-                    img.card-img-top.img-fluid src="http://res.cloudinary.com/viadeca/image/upload/q_55,w_420,h_220,c_fill/bs4themes/#{theme}/#{theme}_dark.png" alt="#{theme.capitalize}"
+                    img.card-img-top.img-fluid src="http://res.cloudinary.com/viadeca/image/upload/q_58,w_420,h_220,c_fill/bs4themes/#{theme}/#{theme}_dark.png" alt="#{theme.capitalize}"
 
             .card-footer.card-primary.bg-inverse
               .text-xs-center

@@ -2,7 +2,7 @@ class ThemesController < ApplicationController
 
   def index
     @themes = Theme.all
-    @navbar_classes = 'navbar-dark bg-inverse'
+    @navbar_classes = 'navbar-light bg-faded'
     set_meta_tags title: "Responsive Skins and Templates", 
                   description: "Customized Bootstrap 4 themes. Fully responsive with multiple navbars styles, showcasing the latest framework upgrades including cards and button outlines.",
                   keywords: 'bootstrap 4 themes, free bootstrap themes, bootstrap skins'
