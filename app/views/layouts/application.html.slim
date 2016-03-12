@@ -23,13 +23,12 @@ html
     link rel="manifest" href="/manifest.json"
     meta name="msapplication-TileColor" content="#ffffff"
     meta name="msapplication-TileImage" content="/ms-icon-144x144.png"
-    meta name="theme-color" content="#ffffff"
-    
+    meta name="theme-color" content="#ffffff"    
     meta name="viewport" content="width=device-width, initial-scale=1" 
+    = render 'layouts/ga' if Rails.env.production?
   body data-spy="scroll" data-target="#sidebar"
     = render 'layouts/header'
     = yield
     = render 'layouts/footer'
-    = render 'layouts/ga' if Rails.env.production?
     = javascript_include_tag "//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
     = javascript_include_tag 'application', async: Rails.env.production?
