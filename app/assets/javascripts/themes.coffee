@@ -38,5 +38,4 @@ $ ->
       $("footer.footer").removeClass("visible")
     return
 
-  # google ads
-  (adsbygoogle = window.adsbygoogle || []).push({});
+  new GoogleAdsense('.adsbygoogle')

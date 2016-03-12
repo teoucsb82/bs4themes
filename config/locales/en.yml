@@ -26,6 +26,11 @@ en:
       seo_description: "Default Bootstrap 4 CSS settings in display. Modals and popovers are enabled at bottom"
       seo_keywords: "bootstrap 4 themes, bootstrap default skin"
       navbar_classes: "navbar-light bg-faded"
+    candy-apple:
+      subtitle: "blackboard yo"
+      seo_description: "blackboard yo"
+      seo_keywords: "bootstrap 4 themes, bootstrap default skin"
+      navbar_classes: "navbar-dark bg-primary"
     slice:
       subtitle: "Bootstrap 4 Theme - Bright Orange Skin"
       seo_description: "Introducing the Slice theme, with bright orange and purple highlights, can be used as a landing page or reskinned for a simple blog."

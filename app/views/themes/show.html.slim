@@ -4,9 +4,10 @@
     .card-block
       .row
         .col-sm-8
-          h1.display-2 = @name.capitalize
+          h1.display-2 = @name.humanize.titleize
           h2 = t("themes.#{@name}.subtitle")
           p.lead = t("themes.#{@name}.seo_description")
+          p Bootstrap 4 Theme
           - unless @name == "default"
             .btn-group
               = link_to content_tag(:i, nil, class: "fa fa-cloud-download") + " #{@name.capitalize}.css (compiled)", "https://s3-us-west-2.amazonaws.com/bs4themes/themes/#{@name}/#{@name}.css", class: "btn btn-primary btn-lg"

@@ -12,7 +12,7 @@ header
               .dropdown-divider
               - Theme.all.each do |theme|
                 - next if theme == "default"
-                = link_to theme.capitalize, theme_path(theme), class: "dropdown-item"
+                = link_to theme.humanize.titleize, theme_path(theme), class: "dropdown-item"
           - if @name && @name != "default"
             li.nav-item.dropdown
               = link_to "Samples", "#preview-page", class: "nav-link dropdown-toggle", aria: { expanded: false, haspopup: true }, data: { toggle: "dropdown" }
